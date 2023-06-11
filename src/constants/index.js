@@ -259,9 +259,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Angular Portfolio",
+    name: "Full-Stack Angular Portfolio",
     description:
-      "Full stack portfolio web of distributed architecture with a user interface design (front end) that displays information, an SQL database that stores the aforementioned data, and must have the necessary APIs to provide the information over the internet (back end).",
+      "This is the completed project of Argentina Programa Course. A Full stack portfolio web of distributed architecture with a user interface design (front end) that displays my portfolio information, and SQL database that stores the aforementioned data, and must have the necessary APIs to provide the information over the internet (back end).",
     tags: [
       {
         name: "angular",
@@ -275,6 +275,10 @@ const projects = [
         name: "bootstrap",
         color: "pink-text-gradient",
       },
+      {
+        name: "java",
+        color: "yellow-text-gradient",
+      },
     ],
     image: argProgramaPortfolio,
     source_code_link: "https://github.com/JjuliSanz/FrontEnd-AP",
@@ -283,19 +287,27 @@ const projects = [
   {
     name: "Nft Marketplace",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "The NFT Marketplace project is a cutting-edge platform that allows users to buy, sell, and trade unique digital assets known as Non-Fungible Tokens (NFTs). Built with the latest blockchain technology, this marketplace provides a decentralized and secure environment for creators, collectors, and enthusiasts to engage in NFT transactions. Users can explore a wide variety of digital artwork, collectibles, virtual real estate, and other digital assets, each represented by a unique token on the blockchain. The marketplace supports seamless transactions, with smart contracts ensuring authenticity, provenance, and ownership verification of each NFT. Additionally, the platform offers features such as bidding, auctions, and a robust search and discovery mechanism to enhance the user experience. Whether you're an artist looking to showcase your work, a collector seeking rare and valuable NFTs, or an investor interested in this emerging digital asset class, the NFT Marketplace provides a dynamic and vibrant ecosystem to participate in the world of non-fungible tokens.",
     tags: [
       {
-        name: "react",
+        name: "NFT",
         color: "blue-text-gradient",
       },
       {
-        name: "web3",
+        name: "Web3",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Hardhat",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Ethers.js",
         color: "pink-text-gradient",
+      },
+      {
+        name: "IPFS",
+        color: "red-text-gradient",
       },
     ],
     image: NftMarket,
@@ -308,7 +320,7 @@ const projects = [
       "The Real Estate Listing App allows users to view and search available properties for sale or rent. Listing data, including descriptions, images, and property details, is stored using IPFS and Pinata. This approach provides benefits such as censorship resistance, data immutability, and easy access to information anytime, anywhere. In summary, this project combines a real estate listing application with decentralized technologies like IPFS and Pinata to deliver a secure and reliable database, ensuring the availability and integrity of real estate listing data. This page unfortunately needs a CORS extension to works ;(",
     tags: [
       {
-        name: "nextjs",
+        name: "Nextjs",
         color: "blue-text-gradient",
       },
       {
@@ -316,12 +328,16 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "pinata",
+        name: "Pinata",
         color: "pink-text-gradient",
       },
       {
-        name: "nft",
+        name: "NFT",
         color: "red-text-gradient",
+      },
+      {
+        name: "Solidity",
+        color: "purple-text-gradient",
       },
     ],
     image: pinataLogo,
@@ -334,7 +350,7 @@ const projects = [
       "In this project, we create a clone of the popular booking platform. The backend is built using Node.js and Express.js, which provide a scalable and efficient server-side infrastructure. We use MongoDB, a NoSQL database, to store and manage data related to bookings, users, accommodations, and other relevant information. The backend API handles user authentication, booking creation and management, and communication with the database. On the frontend, we use React, a powerful JavaScript library, to build a dynamic and interactive user interface. Users can browse accommodations, search for available dates, view details, and make bookings. React components handle rendering, state management, and user interactions. We utilize React Router to enable routing and navigation within the application. ",
     tags: [
       {
-        name: "react-app",
+        name: "React-app",
         color: "blue-text-gradient",
       },
       {
@@ -359,7 +375,7 @@ const projects = [
     description:"A decentralized e-commerce platform deployed on the Goerli testnet utilizing the following stack:\n\n- Solidity: Used for writing smart contracts and tests.\n- Javascript: Utilized for building the frontend application using React.js and writing tests.\n- Hardhat: Employed as the development framework for building, testing, and deploying smart contracts.\n- Ethers.js: Used for interacting with the Ethereum blockchain, including sending and receiving transactions, querying contract data, and managing accounts.\n- React.js: Utilized as the frontend framework for building the user interface of the decentralized e-commerce platform.\n\nThe combination of these technologies allows for the creation of a decentralized e-commerce platform on the Goerli testnet, where users can interact with smart contracts deployed on the Ethereum blockchain using a user-friendly and responsive frontend interface.",
     tags: [
       {
-        name: "solidity",
+        name: "Solidity",
         color: "blue-text-gradient",
       },
       {
