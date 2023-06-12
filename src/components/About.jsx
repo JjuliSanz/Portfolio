@@ -40,11 +40,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)} // Add fade-in animation 
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a junior software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Angular, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        Highly motivated Full Stack Developer with a focus on MERN (MongoDB, Express.js, React.js, Node.js) stack and a growing interest in Web3 development. Skilled in designing and implementing web applications with a focus on decentralized technologies and blockchain integration. Proficient in smart contract development, Ethereum, Solidity, and Web3.js, with a developing understanding of decentralized protocols, distributed storage, and blockchain security. Experienced in developing user-friendly interfaces, RESTful APIs, and integrating external services. Strong problem-solving abilities and a collaborative mindset, eager to contribute and learn in fast-paced, innovative environments.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

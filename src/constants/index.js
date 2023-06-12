@@ -25,10 +25,16 @@ import {
   argprograma,
   argProgramaPortfolio,
   NftMarket,
-  pinataLogo,
-  bookinglogo,
-  amazonlogo,
-  godaddylogo
+  domainapp,
+  ecommerceapp,
+  pinatarealestate,
+  bookingapp,
+  solidity,
+  ipfs,
+  ethersjs,
+  metamask,
+  ethereum,
+  hardhat,
 } from "../assets";
 
 export const navLinks = [
@@ -91,12 +97,36 @@ const technologies = [
     icon: tailwind,
   },
   {
+    name: "Solidity",
+    icon: solidity,
+  },
+  {
+    name: "Ipfs",
+    icon: ipfs,
+  },
+  {
+    name: "Ethers.js",
+    icon: ethersjs,
+  },
+  {
+    name: "MetaMask",
+    icon: metamask,
+  },
+  {
     name: "Node JS",
     icon: nodejs,
   },
   {
     name: "MongoDB",
     icon: mongodb,
+  },
+  {
+    name: "Ethereum",
+    icon: ethereum,
+  },
+  {
+    name: "HardHat",
+    icon: hardhat,
   },
   {
     name: "git",
@@ -258,6 +288,7 @@ const testimonials = [
 ];
 
 const projects = [
+  // Angular Portfolio
   {
     name: "Full-Stack Angular Portfolio",
     description:
@@ -282,12 +313,16 @@ const projects = [
     ],
     image: argProgramaPortfolio,
     source_code_link: "https://github.com/JjuliSanz/FrontEnd-AP",
-    web_url:"https://frontend-argprogram.web.app/"
+    web_url: [
+      "https://frontend-argprogram.web.app/",
+      "https://backend-ap-yky6.onrender.com",
+    ],
   },
+  // Nft Marketplace
   {
     name: "Nft Marketplace",
     description:
-      "The NFT Marketplace project is a cutting-edge platform that allows users to buy, sell, and trade unique digital assets known as Non-Fungible Tokens (NFTs). Built with the latest blockchain technology, this marketplace provides a decentralized and secure environment for creators, collectors, and enthusiasts to engage in NFT transactions. Users can explore a wide variety of digital artwork, collectibles, virtual real estate, and other digital assets, each represented by a unique token on the blockchain. The marketplace supports seamless transactions, with smart contracts ensuring authenticity, provenance, and ownership verification of each NFT. Additionally, the platform offers features such as bidding, auctions, and a robust search and discovery mechanism to enhance the user experience. Whether you're an artist looking to showcase your work, a collector seeking rare and valuable NFTs, or an investor interested in this emerging digital asset class, the NFT Marketplace provides a dynamic and vibrant ecosystem to participate in the world of non-fungible tokens.",
+      "The NFT Marketplace project is a cutting-edge platform that allows users to buy, sell, and trade unique digital assets known as Non-Fungible Tokens (NFTs). Whether you're an artist looking to showcase your work, a collector seeking rare and valuable NFTs, or an investor interested in this emerging digital asset class, the NFT Marketplace provides a dynamic and vibrant ecosystem to participate in the world of non-fungible tokens.",
     tags: [
       {
         name: "NFT",
@@ -312,12 +347,13 @@ const projects = [
     ],
     image: NftMarket,
     source_code_link: "https://github.com/JjuliSanz/NFT-Marketplace",
-    web_url:"https://juli-nft-marketplace.netlify.app/"
+    web_url: ["https://juli-nft-marketplace.netlify.app/"],
   },
+  // Real Estate Pinata
   {
     name: "Real State IPFS Listing App",
     description:
-      "The Real Estate Listing App allows users to view and search available properties for sale or rent. Listing data, including descriptions, images, and property details, is stored using IPFS and Pinata. This approach provides benefits such as censorship resistance, data immutability, and easy access to information anytime, anywhere. In summary, this project combines a real estate listing application with decentralized technologies like IPFS and Pinata to deliver a secure and reliable database, ensuring the availability and integrity of real estate listing data. This page unfortunately needs a CORS extension to works ;(",
+      "This project combines a real estate listing application with decentralized technologies like IPFS and Pinata to deliver a secure and reliable database, ensuring the availability and integrity of real estate listing data. This page unfortunately needs a CORS extension to works ;(",
     tags: [
       {
         name: "Nextjs",
@@ -340,14 +376,15 @@ const projects = [
         color: "purple-text-gradient",
       },
     ],
-    image: pinataLogo,
+    image: pinatarealestate,
     source_code_link: "https://github.com/JjuliSanz/Dapp-Real-Estate-Pinata",
-    web_url: "https://pinata-real-estate.netlify.app/"
+    web_url: ["https://pinata-real-estate.netlify.app/"],
   },
+  // Booking App
   {
     name: "Full-Stack Booking Clone App",
     description:
-      "In this project, we create a clone of the popular booking platform. The backend is built using Node.js and Express.js, which provide a scalable and efficient server-side infrastructure. We use MongoDB, a NoSQL database, to store and manage data related to bookings, users, accommodations, and other relevant information. The backend API handles user authentication, booking creation and management, and communication with the database. On the frontend, we use React, a powerful JavaScript library, to build a dynamic and interactive user interface. Users can browse accommodations, search for available dates, view details, and make bookings. React components handle rendering, state management, and user interactions. We utilize React Router to enable routing and navigation within the application. ",
+      "In this project, we create a clone of the popular booking platform. The clone project utilizes modern technologies and frameworks to ensure a seamless user experience, efficient search functionality, and robust backend infrastructure to handle a large volume of data and user interactions. The project focuses on delivering a visually appealing and intuitive interface, along with reliable and accurate information for travelers to plan and book their trips with ease.",
     tags: [
       {
         name: "React-app",
@@ -366,13 +403,18 @@ const projects = [
         color: "yellow-text-gradient",
       },
     ],
-    image: bookinglogo,
+    image: bookingapp,
     source_code_link: "https://github.com/JjuliSanz/Client-Booking-app",
-    web_url: "https://buking-clone.netlify.app/"
+    web_url: [
+      "https://buking-clone.netlify.app/",
+      "https://backend-booking-app.onrender.com/api/hotels",
+    ],
   },
+  // Decentralized e-commerce
   {
     name: "Decentralized e-commerce",
-    description:"A decentralized e-commerce platform deployed on the Goerli testnet utilizing the following stack:\n\n- Solidity: Used for writing smart contracts and tests.\n- Javascript: Utilized for building the frontend application using React.js and writing tests.\n- Hardhat: Employed as the development framework for building, testing, and deploying smart contracts.\n- Ethers.js: Used for interacting with the Ethereum blockchain, including sending and receiving transactions, querying contract data, and managing accounts.\n- React.js: Utilized as the frontend framework for building the user interface of the decentralized e-commerce platform.\n\nThe combination of these technologies allows for the creation of a decentralized e-commerce platform on the Goerli testnet, where users can interact with smart contracts deployed on the Ethereum blockchain using a user-friendly and responsive frontend interface.",
+    description:
+      "The E-commerce dApp is a decentralized application (dApp) that revolutionizes the online shopping experience by leveraging blockchain technology. It provides users with a secure and transparent platform where they can buy products using cryptocurrencies. With this dApp, users can explore a wide range of products from various sellers, ensuring a diverse marketplace. Each product listing includes detailed information, images, and reviews from previous buyers, empowering users to make informed purchasing decisions.",
     tags: [
       {
         name: "Solidity",
@@ -395,13 +437,15 @@ const projects = [
         color: "red-text-gradient",
       },
     ],
-    image: amazonlogo,
+    image: ecommerceapp,
     source_code_link: "https://github.com/JjuliSanz/Dapp-e-commerce",
-    web_url: "https://gentle-moon-4719.on.fleek.co/"
+    web_url: ["https://gentle-moon-4719.on.fleek.co/"],
   },
+  // Decentralized Domains
   {
     name: "Decentralized domains app",
-    description:"A decentralized clone of GoDaddy is a platform built on blockchain technology that allows users to buy domain names in a decentralized manner. Similar to GoDaddy, it provides a user-friendly interface for searching, and managing domain names.\n\n- This decentralized clone leverages blockchain, such as Ethereum, to store and manage domain ownership records using smart contracts. It eliminates the need for intermediaries and central authorities, allowing users to have full control and ownership of their domains without relying on a centralized entity.\n- By decentralizing the domain registration and management process, this clone provides an alternative to traditional domain registrars, offering increased security, privacy, and ownership rights for domain owners. It empowers individuals to truly own and control their online presence, while also contributing to the overall decentralization and resilience of the internet.",
+    description:
+      "A decentralized clone of GoDaddy is a platform built on blockchain technology that allows users to buy domain names in a decentralized manner. By decentralizing the domain registration and management process, this clone provides an alternative to traditional domain registrars, offering increased security, privacy, and ownership rights for domain owners. It empowers individuals to truly own and control their online presence, while also contributing to the overall decentralization and resilience of the internet.",
     tags: [
       {
         name: "solidity",
@@ -424,13 +468,10 @@ const projects = [
         color: "red-text-gradient",
       },
     ],
-    image: godaddylogo,
+    image: domainapp,
     source_code_link: "https://github.com/JjuliSanz/Dapp-Domain",
-    web_url: "https://noisy-disk-5752.on.fleek.co/"
-  }
-  
+    web_url: ["https://noisy-disk-5752.on.fleek.co/"],
+  },
 ];
-
-
 
 export { services, technologies, experiences, testimonials, projects };

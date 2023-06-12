@@ -4,7 +4,6 @@ import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 
-
 import { styles } from "../styles";
 import { github, web } from "../assets";
 import { SectionWrapper } from "../hoc";
@@ -18,13 +17,20 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
-  web_url
+  web_url,
 }) => {
   const [openPreview, setOpenPreview] = useState(false);
 
   const handleOpenPreview = () => {
     setOpenPreview(true);
     console.log(image);
+  };
+  const handleOpenURL = (url) => {
+    web_url.forEach((url) => window.open(url, "_blank"));
+  };
+  const handleOpenGitHub = (e) => {
+    e.stopPropagation();
+    window.open(source_code_link, "_blank");
   };
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -36,20 +42,22 @@ const ProjectCard = ({
         }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
-        <div className="relative w-full h-[230px] cursor-pointer" onClick={handleOpenPreview}>
+        <div
+          className="relative w-full h-[230px] cursor-pointer"
+          onClick={handleOpenPreview}
+        >
           {/* Image */}
           <img
             src={image}
             alt={name}
             className="w-full h-full object-cover rounded-2xl "
-            
           />
 
           {/* Github icon */}
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+          <div className="inset-0 flex justify-end m-3 card-img_hover inline-block">
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              onClick={(e) => handleOpenGitHub(e)}
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer inline-block"              
             >
               <img
                 src={github}
@@ -59,11 +67,23 @@ const ProjectCard = ({
             </div>
           </div>
           {/* Url icon */}
-          <div className="absolute inset-0 flex justify-start m-3 card-img_hover">
-            <div onClick={() => window.open(web_url, "_blank")} className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-              <img src={web} alt="weburl" className="w-1/2 h-1/2 object-contain" />
+          {web_url.map((url, index) => (
+            <div
+              key={index}
+              className="absolute inset-0 flex justify-start m-3 card-img_hover inline-block"
+            >
+              <div
+                onClick={() => handleOpenURL(url)}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer inline-block"
+              >
+                <img
+                  src={web}
+                  alt="weburl"
+                  className="w-1/2 h-1/2 object-contain"
+                />
+              </div>
             </div>
-          </div>
+          ))}
         </div>
 
         <div className="mt-5">
@@ -97,7 +117,7 @@ const ProjectCard = ({
 const Preview = ({ image, name, onClose }) => {
   return (
     <Transition.Root show={true} as={Fragment}>
-      <Dialog 
+      <Dialog
         as="div"
         className="fixed inset-0 overflow-y-auto"
         onClose={onClose}
@@ -142,7 +162,7 @@ const Preview = ({ image, name, onClose }) => {
                   src={image}
                   alt={name}
                   className="object-cover object-center rounded-3xl"
-                />             
+                />
               </div>
             </div>
           </Transition.Child>

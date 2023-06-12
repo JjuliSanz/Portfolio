@@ -1,5 +1,5 @@
 // Icons
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -23,6 +23,12 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import angular from "./tech/angular.png";
+import solidity from "./tech/solidity.png";
+import metamask from "./tech/metamask.png";
+import hardhat from "./tech/hardhat.png";
+import ethereum from "./tech/ethereum.png";
+import ethersjs from "./tech/ethersjs.png";
+import ipfs from "./tech/ipfs.png";
 
 // Experience
 import meta from "./company/meta.png";
@@ -38,10 +44,10 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import argProgramaPortfolio from "./angularPortfolioImg.png";
 import NftMarket from "./NftMarket.png";
-import pinataLogo from "./pinatalogo.png"
-import bookinglogo from "./bookinglogo.svg"
-import amazonlogo from "./company/amazon.png"
-import godaddylogo from "./company/godaddy.png"
+import pinatarealestate from "./pinatarealestate.png";
+import bookingapp from "./bookingapp.png";
+import ecommerceapp from "./ecommerceapp.png";
+import domainapp from "./domainapp.png";
 
 export {
   logo,
@@ -77,8 +83,14 @@ export {
   argprograma,
   argProgramaPortfolio,
   NftMarket,
-  pinataLogo,
-  bookinglogo,
-  amazonlogo,
-  godaddylogo
+  domainapp,
+  ecommerceapp,
+  pinatarealestate,
+  bookingapp,
+  solidity,
+  metamask,
+  hardhat,
+  ethereum,
+  ethersjs,
+  ipfs,
 };
