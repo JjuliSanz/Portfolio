@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
+import { url } from "../assets";
 
 import { styles } from "../styles";
 import { github, web } from "../assets";
@@ -18,6 +19,7 @@ const ProjectCard = ({
   image,
   source_code_link,
   web_url,
+  backend_url,
 }) => {
   const [openPreview, setOpenPreview] = useState(false);
 
@@ -53,21 +55,8 @@ const ProjectCard = ({
             className="w-full h-full object-cover rounded-2xl "
           />
 
-          {/* Github icon */}
-          <div className="inset-0 flex justify-end m-3 card-img_hover inline-block">
-            <div
-              onClick={(e) => handleOpenGitHub(e)}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer inline-block"              
-            >
-              <img
-                src={github}
-                alt="github"
-                className="w-1/2 h-1/2 object-contain"
-              />
-            </div>
-          </div>
           {/* Url icon */}
-          {web_url.map((url, index) => (
+          {/* {web_url.map((url, index) => (
             <div
               key={index}
               className="absolute inset-0 flex justify-start m-3 card-img_hover inline-block"
@@ -77,17 +66,34 @@ const ProjectCard = ({
                 className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer inline-block"
               >
                 <img
-                  src={web}
+                  src={url}
                   alt="weburl"
                   className="w-1/2 h-1/2 object-contain"
                 />
               </div>
             </div>
-          ))}
+          ))} */}
         </div>
 
         <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+          <div className="flex justify-between">
+            {/* Title */}
+            <h3 className="text-white font-bold text-[24px]">{name}</h3>
+            {/* Github icon */}
+            <div className="flex justify-end m-3 card-img_hover ">
+              <div
+                onClick={(e) => handleOpenGitHub(e)}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer inline-block"
+              >
+                <img
+                  src={github}
+                  alt="github"
+                  className="w-1/2 h-1/2 object-contain"
+                />
+              </div>
+            </div>
+          </div>
+          {/* Description */}
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
 
@@ -98,6 +104,31 @@ const ProjectCard = ({
               #{tag.name}
             </p>
           ))}
+        </div>
+
+        {/* Live Demo */}
+        <div className="mt-5 mr-1">
+          {" "}
+          Live Demo:
+          <a
+            href=""
+            target="_blank"
+            className="mt-2 ml-2 text-secondary text-[14px]"
+          >
+            {web_url}
+          </a>
+          {backend_url && (
+            <div>
+              Backend Url:
+              <a
+                href=""
+                target="_blank"
+                className="mt-2 ml-2 text-secondary text-[14px]"
+              >
+                {backend_url}
+              </a>
+            </div>
+          )}
         </div>
 
         {/* Preview */}

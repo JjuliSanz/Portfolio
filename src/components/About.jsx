@@ -43,7 +43,7 @@ const About = () => {
         Highly motivated Full Stack Developer with a focus on MERN (MongoDB, Express.js, React.js, Node.js) stack and a growing interest in Web3 development. Skilled in designing and implementing web applications with a focus on decentralized technologies and blockchain integration. Proficient in smart contract development, Ethereum, Solidity, and Web3.js, with a developing understanding of decentralized protocols, distributed storage, and blockchain security. Experienced in developing user-friendly interfaces, RESTful APIs, and integrating external services. Strong problem-solving abilities and a collaborative mindset, eager to contribute and learn in fast-paced, innovative environments.
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap gap-10 justify-between">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} /> // Render ServiceCard component
         ))}

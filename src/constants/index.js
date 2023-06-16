@@ -43,8 +43,8 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "experience",
+    title: "Experience",
   },
   {
     id: "contact",
@@ -54,19 +54,15 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Developer",
     icon: web,
-  },
-  {
-    title: "React Native Developer",
-    icon: mobile,
   },
   {
     title: "Backend Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Solidity Developer",
     icon: creator,
   },
 ];
@@ -313,10 +309,8 @@ const projects = [
     ],
     image: argProgramaPortfolio,
     source_code_link: "https://github.com/JjuliSanz/FrontEnd-AP",
-    web_url: [
-      "https://frontend-argprogram.web.app/",
-      "https://backend-ap-yky6.onrender.com",
-    ],
+    web_url: "https://frontend-argprogram.web.app/",
+    backend_url: "https://backend-ap-yky6.onrender.com",
   },
   // Nft Marketplace
   {
@@ -405,10 +399,8 @@ const projects = [
     ],
     image: bookingapp,
     source_code_link: "https://github.com/JjuliSanz/Client-Booking-app",
-    web_url: [
-      "https://buking-clone.netlify.app/",
-      "https://backend-booking-app.onrender.com/api/hotels",
-    ],
+    web_url: "https://buking-clone.netlify.app/",
+    backend_url: "https://backend-booking-app.onrender.com/api/hotels",
   },
   // Decentralized e-commerce
   {
