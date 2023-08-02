@@ -40,15 +40,17 @@ import school from "./company/school.png";
 import argprograma from "./company/argprograma.png";
 
 // Projects
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-import argProgramaPortfolio from "./angularPortfolioImg.png";
-import NftMarket from "./NftMarket.png";
-import pinatarealestate from "./pinatarealestate.png";
-import bookingapp from "./bookingapp.png";
-import ecommerceapp from "./ecommerceapp.png";
-import domainapp from "./domainapp.png";
+import carrent from "./projects/carrent.png";
+import jobit from "./projects/jobit.png";
+import tripguide from "./projects/tripguide.png";
+import argProgramaPortfolio from "./projects/angularPortfolioImg.png";
+import NftMarket from "./projects/NftMarket.png";
+import pinatarealestate from "./projects/pinatarealestate.png";
+import bookingapp from "./projects/bookingapp.png";
+import ecommerceapp from "./projects/ecommerceapp.png";
+import domainapp from "./projects/domainapp.png";
+import krypt from "./projects/kryptexchange.png";
+import crowdfunding from "./projects/crowdfunding.png";
 
 export {
   logo,
@@ -94,5 +96,7 @@ export {
   ethereum,
   ethersjs,
   ipfs,
-  url
+  url,
+  krypt,
+  crowdfunding
 };

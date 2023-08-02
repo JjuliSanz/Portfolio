@@ -35,6 +35,8 @@ import {
   metamask,
   ethereum,
   hardhat,
+  krypt,
+  crowdfunding,
 } from "../assets";
 
 export const navLinks = [
@@ -343,11 +345,11 @@ const projects = [
     source_code_link: "https://github.com/JjuliSanz/NFT-Marketplace",
     web_url: ["https://juli-nft-marketplace.netlify.app/"],
   },
-  // Real Estate Pinata
+  // Decentralized Crowdfunding App
   {
-    name: "Real State IPFS Listing App",
+    name: "Decentralized Crowdfunding App",
     description:
-      "This project combines a real estate listing application with decentralized technologies like IPFS and Pinata to deliver a secure and reliable database, ensuring the availability and integrity of real estate listing data. This page unfortunately needs a CORS extension to works ;(",
+      "The crowdfunding web3 full-stack app is a decentralized fundraising platform that leverages blockchain technology to revolutionize the way projects and initiatives are funded. It allows individuals and organizations to create campaigns and raise funds from a global network of contributors, all while ensuring transparency, security, and immutability of transactions.",
     tags: [
       {
         name: "Nextjs",
@@ -370,9 +372,9 @@ const projects = [
         color: "purple-text-gradient",
       },
     ],
-    image: pinatarealestate,
-    source_code_link: "https://github.com/JjuliSanz/Dapp-Real-Estate-Pinata",
-    web_url: ["https://pinata-real-estate.netlify.app/"],
+    image: crowdfunding,
+    source_code_link: "https://github.com/JjuliSanz/Crowdfunding-Dapp",
+    web_url: ["https://crowdfunding-dapp-web3.vercel.app/"],
   },
   // Booking App
   {
@@ -463,6 +465,37 @@ const projects = [
     image: domainapp,
     source_code_link: "https://github.com/JjuliSanz/Dapp-Domain",
     web_url: ["https://noisy-disk-5752.on.fleek.co/"],
+  },
+  // Web3 Exchange
+  {
+    name: "Cryptocurrency Sending Application ",
+    description:
+      "The project is focused on creating a comprehensive Web 3.0 application that enables users to send transactions using blockchain technology. The application aims to provide a seamless and secure platform for users to initiate and process transactions on the blockchain. The project aims to leverage blockchain technology for transactional purposes, ensuring transparency and decentralization in transactions.",
+    tags: [
+      {
+        name: "Solidity",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Hardhat",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Ether.js",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "React.js",
+        color: "red-text-gradient",
+      },
+    ],
+    image: krypt,
+    source_code_link: "https://github.com/JjuliSanz/KryptExchange",
+    web_url: ["https://kryptexchangex.netlify.app/"],
   },
 ];
 

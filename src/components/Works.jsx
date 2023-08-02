@@ -83,7 +83,7 @@ const ProjectCard = ({
             <div className="flex justify-end m-3 card-img_hover ">
               <div
                 onClick={(e) => handleOpenGitHub(e)}
-                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer inline-block"
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
               >
                 <img
                   src={github}
@@ -224,8 +224,13 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      {/* <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
+          <ProjectCard key={`project-${index}`} {...project} index={index} />
+        ))}
+      </div> */}
+      <div className="mt-20 flex flex-wrap gap-7">
+        {projects.slice(0, 6).map((project, index) => (
           <ProjectCard key={`project-${index}`} {...project} index={index} />
         ))}
       </div>
