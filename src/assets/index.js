@@ -51,6 +51,7 @@ import ecommerceapp from "./projects/ecommerceapp.png";
 import domainapp from "./projects/domainapp.png";
 import krypt from "./projects/kryptexchange.png";
 import crowdfunding from "./projects/crowdfunding.png";
+import nftcardgame from "./projects/NFTCardgame.png";
 
 export {
   logo,
@@ -98,5 +99,6 @@ export {
   ipfs,
   url,
   krypt,
-  crowdfunding
+  crowdfunding,
+  nftcardgame
 };

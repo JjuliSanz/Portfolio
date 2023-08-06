@@ -37,6 +37,7 @@ import {
   hardhat,
   krypt,
   crowdfunding,
+  nftcardgame,
 } from "../assets";
 
 export const navLinks = [
@@ -314,37 +315,6 @@ const projects = [
     web_url: "https://frontend-argprogram.web.app/",
     backend_url: "https://backend-ap-yky6.onrender.com",
   },
-  // Nft Marketplace
-  {
-    name: "Nft Marketplace",
-    description:
-      "The NFT Marketplace project is a cutting-edge platform that allows users to buy, sell, and trade unique digital assets known as Non-Fungible Tokens (NFTs). Whether you're an artist looking to showcase your work, a collector seeking rare and valuable NFTs, or an investor interested in this emerging digital asset class, the NFT Marketplace provides a dynamic and vibrant ecosystem to participate in the world of non-fungible tokens.",
-    tags: [
-      {
-        name: "NFT",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Web3",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Hardhat",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "Ethers.js",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "IPFS",
-        color: "red-text-gradient",
-      },
-    ],
-    image: NftMarket,
-    source_code_link: "https://github.com/JjuliSanz/NFT-Marketplace",
-    web_url: ["https://juli-nft-marketplace.netlify.app/"],
-  },
   // Decentralized Crowdfunding App
   {
     name: "Decentralized Crowdfunding App",
@@ -376,6 +346,37 @@ const projects = [
     source_code_link: "https://github.com/JjuliSanz/Crowdfunding-Dapp",
     web_url: ["https://crowdfunding-dapp-web3.vercel.app/"],
   },
+  // NFT Card Game
+  {
+    name: "NFT Card Game on Avalanche Fuji Testnet",
+    description:
+      "This is an NFT Card Game project deployed on the Avalanche Fuji Testnet. The game allows players to engage in 1v1 battles using unique NFT cards. Built with core wallet integration, players can collect, trade, and battle with their NFT cards on the blockchain. The project aims to provide an immersive gaming experience while leveraging the benefits of blockchain technology, ensuring transparency and ownership of the in-game assets.",
+    tags: [
+      {
+        name: "Vite",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "NFT",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Hardhat",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "AVAX",
+        color: "red-text-gradient",
+      },
+      {
+        name: "Solidity",
+        color: "purple-text-gradient",
+      },
+    ],
+    image: nftcardgame,
+    source_code_link: "https://github.com/JjuliSanz/NFT-Cardgame",
+    web_url: ["https://etherclash.netlify.app/"],
+  },
   // Booking App
   {
     name: "Full-Stack Booking Clone App",
@@ -403,12 +404,12 @@ const projects = [
     source_code_link: "https://github.com/JjuliSanz/Client-Booking-app",
     web_url: "https://buking-clone.netlify.app/",
     backend_url: "https://backend-booking-app.onrender.com/api/hotels",
-  },
-  // Decentralized e-commerce
+  }, 
+  // Web3 Exchange
   {
-    name: "Decentralized e-commerce",
+    name: "Cryptocurrency Sending Application ",
     description:
-      "The E-commerce dApp is a decentralized application (dApp) that revolutionizes the online shopping experience by leveraging blockchain technology. It provides users with a secure and transparent platform where they can buy products using cryptocurrencies. With this dApp, users can explore a wide range of products from various sellers, ensuring a diverse marketplace. Each product listing includes detailed information, images, and reviews from previous buyers, empowering users to make informed purchasing decisions.",
+      "The project is focused on creating a comprehensive Web 3.0 application that enables users to send transactions using blockchain technology. The application aims to provide a seamless and secure platform for users to initiate and process transactions on the blockchain. The project aims to leverage blockchain technology for transactional purposes, ensuring transparency and decentralization in transactions.",
     tags: [
       {
         name: "Solidity",
@@ -431,9 +432,9 @@ const projects = [
         color: "red-text-gradient",
       },
     ],
-    image: ecommerceapp,
-    source_code_link: "https://github.com/JjuliSanz/Dapp-e-commerce",
-    web_url: ["https://gentle-moon-4719.on.fleek.co/"],
+    image: krypt,
+    source_code_link: "https://github.com/JjuliSanz/KryptExchange",
+    web_url: ["https://kryptexchangex.netlify.app/"],
   },
   // Decentralized Domains
   {
@@ -466,11 +467,42 @@ const projects = [
     source_code_link: "https://github.com/JjuliSanz/Dapp-Domain",
     web_url: ["https://noisy-disk-5752.on.fleek.co/"],
   },
-  // Web3 Exchange
+  // Nft Marketplace
   {
-    name: "Cryptocurrency Sending Application ",
+    name: "Nft Marketplace",
     description:
-      "The project is focused on creating a comprehensive Web 3.0 application that enables users to send transactions using blockchain technology. The application aims to provide a seamless and secure platform for users to initiate and process transactions on the blockchain. The project aims to leverage blockchain technology for transactional purposes, ensuring transparency and decentralization in transactions.",
+      "The NFT Marketplace project is a cutting-edge platform that allows users to buy, sell, and trade unique digital assets known as Non-Fungible Tokens (NFTs). Whether you're an artist looking to showcase your work, a collector seeking rare and valuable NFTs, or an investor interested in this emerging digital asset class, the NFT Marketplace provides a dynamic and vibrant ecosystem to participate in the world of non-fungible tokens.",
+    tags: [
+      {
+        name: "NFT",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Web3",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Hardhat",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Ethers.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "IPFS",
+        color: "red-text-gradient",
+      },
+    ],
+    image: NftMarket,
+    source_code_link: "https://github.com/JjuliSanz/NFT-Marketplace",
+    web_url: ["https://juli-nft-marketplace.netlify.app/"],
+  },
+  // Decentralized e-commerce
+  {
+    name: "Decentralized e-commerce",
+    description:
+      "The E-commerce dApp is a decentralized application (dApp) that revolutionizes the online shopping experience by leveraging blockchain technology. It provides users with a secure and transparent platform where they can buy products using cryptocurrencies. With this dApp, users can explore a wide range of products from various sellers, ensuring a diverse marketplace. Each product listing includes detailed information, images, and reviews from previous buyers, empowering users to make informed purchasing decisions.",
     tags: [
       {
         name: "Solidity",
@@ -493,9 +525,9 @@ const projects = [
         color: "red-text-gradient",
       },
     ],
-    image: krypt,
-    source_code_link: "https://github.com/JjuliSanz/KryptExchange",
-    web_url: ["https://kryptexchangex.netlify.app/"],
+    image: ecommerceapp,
+    source_code_link: "https://github.com/JjuliSanz/Dapp-e-commerce",
+    web_url: ["https://gentle-moon-4719.on.fleek.co/"],
   },
 ];
 

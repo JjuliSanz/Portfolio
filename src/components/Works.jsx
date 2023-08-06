@@ -111,7 +111,7 @@ const ProjectCard = ({
           {" "}
           Live Demo:
           <a
-            href=""
+            href={web_url}
             target="_blank"
             className="mt-2 ml-2 text-secondary text-[14px]"
           >
