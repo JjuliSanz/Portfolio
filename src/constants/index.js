@@ -17,9 +17,6 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
   angular,
   school,
   argprograma,
@@ -38,6 +35,9 @@ import {
   krypt,
   crowdfunding,
   nftcardgame,
+  portfolio,
+  web3Portfolio,
+  threads
 } from "../assets";
 
 export const navLinks = [
@@ -65,7 +65,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Solidity Developer",
+    title: "Full-Stack Developer",
     icon: creator,
   },
 ];
@@ -142,19 +142,6 @@ const technologies = [
 ];
 
 const experiences = [
-  // {
-  //   title: "React.js Developer",
-  //   company_name: "Starbucks",
-  //   icon: starbucks,
-  //   iconBg: "#383E56",
-  //   date: "March 2020 - April 2021",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
   {
     title: "#YoProgramo",
     company_name: "Argentina Programa",
@@ -170,19 +157,6 @@ const experiences = [
       "Containerizing applications with Docker, enabling consistent deployment and scalability.",
     ],
   },
-  // {
-  //   title: "React Native Developer",
-  //   company_name: "Tesla",
-  //   icon: tesla,
-  //   iconBg: "#E6DEDD",
-  //   date: "Jan 2021 - Feb 2022",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
   {
     title: "React.js Course",
     company_name: "CoderHouse",
@@ -196,19 +170,6 @@ const experiences = [
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
-  // {
-  //   title: "Web Developer",
-  //   company_name: "Shopify",
-  //   icon: shopify,
-  //   iconBg: "#383E56",
-  //   date: "Jan 2022 - Jan 2023",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
   {
     title: "Javascript Course",
     company_name: "CoderHouse",
@@ -220,19 +181,6 @@ const experiences = [
       "Skills to work with DOM manipulation, asynchronous programming, web APIs, and modern JavaScript features.",
     ],
   },
-  // {
-  //   title: "Full stack Developer",
-  //   company_name: "Meta",
-  //   icon: meta,
-  //   iconBg: "#E6DEDD",
-  //   date: "Jan 2023 - Present",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
   {
     title: "HTML & CSS Course",
     company_name: "CoderHouse",
@@ -315,67 +263,33 @@ const projects = [
     web_url: "https://frontend-argprogram.web.app/",
     backend_url: "https://backend-ap-yky6.onrender.com",
   },
-  // Decentralized Crowdfunding App
+  // Web3 Portfolio
   {
-    name: "Decentralized Crowdfunding App",
+    name: "Web3 Portfolio",
     description:
-      "The crowdfunding web3 full-stack app is a decentralized fundraising platform that leverages blockchain technology to revolutionize the way projects and initiatives are funded. It allows individuals and organizations to create campaigns and raise funds from a global network of contributors, all while ensuring transparency, security, and immutability of transactions.",
+      "Explore my Web3 portfolio, where I showcase a collection of innovative projects that harness the power of blockchain and decentralized technologies. From cutting-edge dApps to smart contracts and more, discover the future of the web through my work in the Web3 ecosystem.",
     tags: [
       {
-        name: "Nextjs",
+        name: "Typescript",
         color: "blue-text-gradient",
       },
       {
-        name: "IPFS",
+        name: "NextJS",
         color: "green-text-gradient",
       },
       {
-        name: "Pinata",
+        name: "Tailwind",
         color: "pink-text-gradient",
       },
       {
-        name: "NFT",
-        color: "red-text-gradient",
-      },
-      {
-        name: "Solidity",
-        color: "purple-text-gradient",
+        name: "Redux",
+        color: "yellow-text-gradient",
       },
     ],
-    image: crowdfunding,
-    source_code_link: "https://github.com/JjuliSanz/Crowdfunding-Dapp",
-    web_url: ["https://crowdfunding-dapp-web3.vercel.app/"],
-  },
-  // NFT Card Game
-  {
-    name: "NFT Card Game on Avalanche Fuji Testnet",
-    description:
-      "This is an NFT Card Game project deployed on the Avalanche Fuji Testnet. The game allows players to engage in 1v1 battles using unique NFT cards. Built with core wallet integration, players can collect, trade, and battle with their NFT cards on the blockchain. The project aims to provide an immersive gaming experience while leveraging the benefits of blockchain technology, ensuring transparency and ownership of the in-game assets.",
-    tags: [
-      {
-        name: "Vite",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "NFT",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Hardhat",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "AVAX",
-        color: "red-text-gradient",
-      },
-      {
-        name: "Solidity",
-        color: "purple-text-gradient",
-      },
-    ],
-    image: nftcardgame,
-    source_code_link: "https://github.com/JjuliSanz/NFT-Cardgame",
-    web_url: ["https://etherclash.netlify.app/"],
+    image: web3Portfolio,
+    source_code_link: "https://github.com/JjuliSanz/FrontEnd-AP",
+    web_url: "https://frontend-argprogram.web.app/",
+    backend_url: "https://backend-ap-yky6.onrender.com",
   },
   // Booking App
   {
@@ -404,131 +318,43 @@ const projects = [
     source_code_link: "https://github.com/JjuliSanz/Client-Booking-app",
     web_url: "https://buking-clone.netlify.app/",
     backend_url: "https://backend-booking-app.onrender.com/api/hotels",
-  }, 
-  // Web3 Exchange
+  },
+  // Threads App
   {
-    name: "Cryptocurrency Sending Application ",
+    name: "Threads-clone-app",
     description:
-      "The project is focused on creating a comprehensive Web 3.0 application that enables users to send transactions using blockchain technology. The application aims to provide a seamless and secure platform for users to initiate and process transactions on the blockchain. The project aims to leverage blockchain technology for transactional purposes, ensuring transparency and decentralization in transactions.",
+      "This is a dynamic web application that showcases a fusion of cutting-edge technologies to deliver a seamless user experience. Built with Next.js 13.4, the power of Server Side Rendering (SSR) ensures optimal performance and SEO friendliness. MongoDB efficiently handles complex data schemas, while TailwindCSS brings captivating layouts to life. Clerk handles authentication, UploadThing manages file uploads, and Shadcn components enhance UI interactivity. Real-time events are embraced through webhooks, and middleware/API actions ensure robust security and authorization. Next.js layout route groups organize navigation, Zod validates data, and react-hook-form manages forms efficiently",
     tags: [
       {
-        name: "Solidity",
+        name: "Typescript",
         color: "blue-text-gradient",
       },
       {
-        name: "Javascript",
+        name: "NextJS",
         color: "green-text-gradient",
       },
       {
-        name: "Hardhat",
+        name: "MongoDB",
         color: "pink-text-gradient",
       },
       {
-        name: "Ether.js",
+        name: "Tailwind",
         color: "yellow-text-gradient",
       },
       {
-        name: "React.js",
-        color: "red-text-gradient",
-      },
-    ],
-    image: krypt,
-    source_code_link: "https://github.com/JjuliSanz/KryptExchange",
-    web_url: ["https://kryptexchangex.netlify.app/"],
-  },
-  // Decentralized Domains
-  {
-    name: "Decentralized domains app",
-    description:
-      "A decentralized clone of GoDaddy is a platform built on blockchain technology that allows users to buy domain names in a decentralized manner. By decentralizing the domain registration and management process, this clone provides an alternative to traditional domain registrars, offering increased security, privacy, and ownership rights for domain owners. It empowers individuals to truly own and control their online presence, while also contributing to the overall decentralization and resilience of the internet.",
-    tags: [
-      {
-        name: "solidity",
-        color: "blue-text-gradient",
+        name: "Clerk",
+        color: "violet-text-gradient",
       },
       {
-        name: "Javascript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Hardhat",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Ether.js",
-        color: "yellow-text-gradient",
-      },
-      {
-        name: "React.js",
-        color: "red-text-gradient",
-      },
-    ],
-    image: domainapp,
-    source_code_link: "https://github.com/JjuliSanz/Dapp-Domain",
-    web_url: ["https://noisy-disk-5752.on.fleek.co/"],
-  },
-  // Nft Marketplace
-  {
-    name: "Nft Marketplace",
-    description:
-      "The NFT Marketplace project is a cutting-edge platform that allows users to buy, sell, and trade unique digital assets known as Non-Fungible Tokens (NFTs). Whether you're an artist looking to showcase your work, a collector seeking rare and valuable NFTs, or an investor interested in this emerging digital asset class, the NFT Marketplace provides a dynamic and vibrant ecosystem to participate in the world of non-fungible tokens.",
-    tags: [
-      {
-        name: "NFT",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Web3",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Hardhat",
+        name: "Uploadthing",
         color: "orange-text-gradient",
       },
-      {
-        name: "Ethers.js",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "IPFS",
-        color: "red-text-gradient",
-      },
     ],
-    image: NftMarket,
-    source_code_link: "https://github.com/JjuliSanz/NFT-Marketplace",
-    web_url: ["https://juli-nft-marketplace.netlify.app/"],
-  },
-  // Decentralized e-commerce
-  {
-    name: "Decentralized e-commerce",
-    description:
-      "The E-commerce dApp is a decentralized application (dApp) that revolutionizes the online shopping experience by leveraging blockchain technology. It provides users with a secure and transparent platform where they can buy products using cryptocurrencies. With this dApp, users can explore a wide range of products from various sellers, ensuring a diverse marketplace. Each product listing includes detailed information, images, and reviews from previous buyers, empowering users to make informed purchasing decisions.",
-    tags: [
-      {
-        name: "Solidity",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Javascript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Hardhat",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Ether.js",
-        color: "yellow-text-gradient",
-      },
-      {
-        name: "React.js",
-        color: "red-text-gradient",
-      },
-    ],
-    image: ecommerceapp,
-    source_code_link: "https://github.com/JjuliSanz/Dapp-e-commerce",
-    web_url: ["https://gentle-moon-4719.on.fleek.co/"],
-  },
+    image: threads,
+    source_code_link: "https://github.com/JjuliSanz/Client-Booking-app",
+    web_url: "https://threads-project-app.vercel.app/",
+    backend_url: "",
+  }, 
 ];
 
 export { services, technologies, experiences, testimonials, projects };

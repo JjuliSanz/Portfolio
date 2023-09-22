@@ -40,9 +40,6 @@ import school from "./company/school.png";
 import argprograma from "./company/argprograma.png";
 
 // Projects
-import carrent from "./projects/carrent.png";
-import jobit from "./projects/jobit.png";
-import tripguide from "./projects/tripguide.png";
 import argProgramaPortfolio from "./projects/angularPortfolioImg.png";
 import NftMarket from "./projects/NftMarket.png";
 import pinatarealestate from "./projects/pinatarealestate.png";
@@ -52,6 +49,9 @@ import domainapp from "./projects/domainapp.png";
 import krypt from "./projects/kryptexchange.png";
 import crowdfunding from "./projects/crowdfunding.png";
 import nftcardgame from "./projects/NFTCardgame.png";
+import portfolio from "./projects/portfolio.png";
+import web3Portfolio from "./projects/web3Portfolio.png";
+import threads from "./projects/threads.png";
 
 export {
   logo,
@@ -79,9 +79,6 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
   angular,
   school,
   argprograma,
@@ -100,5 +97,8 @@ export {
   url,
   krypt,
   crowdfunding,
-  nftcardgame
+  nftcardgame,
+  portfolio,
+  web3Portfolio,
+  threads
 };

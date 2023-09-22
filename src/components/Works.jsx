@@ -189,7 +189,6 @@ const Preview = ({ image, name, onClose }) => {
               {/* Image */}
               <div className="bg-tertiary p-5 rounded-3xl sm:w-[1300px] w-full">
                 <img
-                  // src='/src/assets/angularPortfolioImg.png'
                   src={image}
                   alt={name}
                   className="object-cover object-center rounded-3xl"

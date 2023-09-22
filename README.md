@@ -10,13 +10,12 @@ The project utilizes TailwindCSS for easy and stylish styling, while Framer Moti
 By following industry best practices and utilizing reusable and scalable code, I've created a portfolio that showcases my skills and understanding of 3D web development.
 
 
-## Acknowledgements
+## Technology Stack & Tools
 
  - [Three.js](https://threejs.org)
  - [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction)
  - [TailwindCSS](https://tailwindcss.com)
  - [Framer Motion](https://www.framer.com/motion/)
-
 
 
 ## Authors
