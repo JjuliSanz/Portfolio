@@ -52,7 +52,7 @@ const ProjectCard = ({
           <img
             src={image}
             alt={name}
-            className="w-full h-full object-cover rounded-2xl "
+            className="w-full h-full object-cover object-top rounded-2xl "
           />
 
           {/* Url icon */}

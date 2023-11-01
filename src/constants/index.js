@@ -37,7 +37,8 @@ import {
   nftcardgame,
   portfolio,
   web3Portfolio,
-  threads
+  valorantSelection,
+  threadsProject
 } from "../assets";
 
 export const navLinks = [
@@ -207,34 +208,31 @@ const experiences = [
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
 const projects = [
+  // Valorant Selection
+  {
+    name: "Valorant Agent Selection Page",
+    description:
+      "This project is a dynamic web application built with Next.js, Tailwind CSS, and JavaScript, offering an immersive experience reminiscent of the agent selection process in the popular game Valorant. Users can explore a visually appealing interface where they can select agents, each with unique abilities, mimicking the game's agent selection feature.",
+    tags: [
+      {
+        name: "NextJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TailwindCss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: valorantSelection,
+    source_code_link: "https://github.com/JjuliSanz/AgentSelector",
+    web_url: "https://agent-selector.vercel.app/",
+    backend_url: "",
+  },
   // Angular Portfolio
   {
     name: "Full-Stack Angular Portfolio",
@@ -287,9 +285,9 @@ const projects = [
       },
     ],
     image: web3Portfolio,
-    source_code_link: "https://github.com/JjuliSanz/FrontEnd-AP",
-    web_url: "https://frontend-argprogram.web.app/",
-    backend_url: "https://backend-ap-yky6.onrender.com",
+    source_code_link: "https://github.com/JjuliSanz/Web3Portfolio",
+    web_url: "https://my-web3-portfolio.vercel.app/",
+    backend_url: "",
   },
   // Booking App
   {
@@ -343,18 +341,50 @@ const projects = [
       },
       {
         name: "Clerk",
-        color: "violet-text-gradient",
+        color: "blue-text-gradient",
       },
       {
         name: "Uploadthing",
         color: "orange-text-gradient",
       },
     ],
-    image: threads,
-    source_code_link: "https://github.com/JjuliSanz/Client-Booking-app",
+    image: threadsProject,
+    source_code_link: "https://github.com/JjuliSanz/Threads-app",
     web_url: "https://threads-project-app.vercel.app/",
     backend_url: "",
-  }, 
+  },
+  // Web Development Portfolio
+  {
+    name: "Web Development Portfolio",
+    description:
+      "Welcome to my ThreeJS 3D Developer Portfolio project! This repository showcases how I've builded this impressive 3D website using the powerful combination of ThreeJS, React Three Fiber, TailwindCSS, and Framer Motion.",
+    tags: [
+      {
+        name: "TailwindCss",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ViteJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ThreeJS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Framer Motion",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: portfolio,
+    source_code_link: "https://github.com/JjuliSanz/Portfolio",
+    web_url: "https://my-portfoli-website.netlify.app/",
+    backend_url: "",
+  },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

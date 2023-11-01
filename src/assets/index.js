@@ -51,7 +51,8 @@ import crowdfunding from "./projects/crowdfunding.png";
 import nftcardgame from "./projects/NFTCardgame.png";
 import portfolio from "./projects/portfolio.png";
 import web3Portfolio from "./projects/web3Portfolio.png";
-import threads from "./projects/threads.png";
+import valorantSelection from "./projects/valorantSelection.png";
+import threadsProject from "./projects/projectThr.png";
 
 export {
   logo,
@@ -100,5 +101,6 @@ export {
   nftcardgame,
   portfolio,
   web3Portfolio,
-  threads
+  valorantSelection,
+  threadsProject
 };
