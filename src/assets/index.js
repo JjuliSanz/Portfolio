@@ -53,6 +53,7 @@ import portfolio from "./projects/portfolio.png";
 import web3Portfolio from "./projects/web3Portfolio.png";
 import valorantSelection from "./projects/valorantSelection.png";
 import threadsProject from "./projects/projectThr.png";
+import starWarsProject from "./projects/starWars.png";
 
 export {
   logo,
@@ -102,5 +103,6 @@ export {
   portfolio,
   web3Portfolio,
   valorantSelection,
-  threadsProject
+  threadsProject,
+  starWarsProject
 };

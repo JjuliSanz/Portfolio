@@ -38,7 +38,8 @@ import {
   portfolio,
   web3Portfolio,
   valorantSelection,
-  threadsProject
+  threadsProject,
+  starWarsProject
 } from "../assets";
 
 export const navLinks = [
@@ -233,33 +234,33 @@ const projects = [
     web_url: "https://agent-selector.vercel.app/",
     backend_url: "",
   },
-  // Angular Portfolio
+  // 3D Star Wars Movie Timeline
   {
-    name: "Full-Stack Angular Portfolio",
+    name: "Galactic Timeline",
     description:
-      "This is the completed project of Argentina Programa Course. A Full stack portfolio web of distributed architecture with a user interface design (front end) that displays my portfolio information, and SQL database that stores the aforementioned data, and must have the necessary APIs to provide the information over the internet (back end).",
+      "Welcome to Galactic Timeline, an interactive experience that takes you through the nine iconic Star Wars movies. This project combines the immersive narrative of the saga with cutting-edge 3D modeling technology to provide you with a unique experience.",
     tags: [
       {
-        name: "angular",
+        name: "Css",
         color: "blue-text-gradient",
       },
       {
-        name: "MySQL",
+        name: "ViteJS",
         color: "green-text-gradient",
       },
       {
-        name: "bootstrap",
+        name: "ThreeJS",
         color: "pink-text-gradient",
       },
       {
-        name: "java",
-        color: "yellow-text-gradient",
+        name: "Javascript",
+        color: "blue-text-gradient",
       },
     ],
-    image: argProgramaPortfolio,
-    source_code_link: "https://github.com/JjuliSanz/FrontEnd-AP",
-    web_url: "https://frontend-argprogram.web.app/",
-    backend_url: "https://backend-ap-yky6.onrender.com",
+    image: starWarsProject,
+    source_code_link: "https://github.com/JjuliSanz/StarWars3d/tree/main",
+    web_url: "https://star-wars3d.vercel.app/",
+    backend_url: "",
   },
   // Web3 Portfolio
   {
@@ -352,6 +353,34 @@ const projects = [
     source_code_link: "https://github.com/JjuliSanz/Threads-app",
     web_url: "https://threads-project-app.vercel.app/",
     backend_url: "",
+  },
+  // Angular Portfolio
+  {
+    name: "Full-Stack Angular Portfolio",
+    description:
+      "This is the completed project of Argentina Programa Course. A Full stack portfolio web of distributed architecture with a user interface design (front end) that displays my portfolio information, and SQL database that stores the aforementioned data, and must have the necessary APIs to provide the information over the internet (back end).",
+    tags: [
+      {
+        name: "angular",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MySQL",
+        color: "green-text-gradient",
+      },
+      {
+        name: "bootstrap",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "java",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: argProgramaPortfolio,
+    source_code_link: "https://github.com/JjuliSanz/FrontEnd-AP",
+    web_url: "https://frontend-argprogram.web.app/",
+    backend_url: "https://backend-ap-yky6.onrender.com",
   },
   // Web Development Portfolio
   {
