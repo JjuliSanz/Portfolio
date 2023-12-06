@@ -39,7 +39,8 @@ import {
   web3Portfolio,
   valorantSelection,
   threadsProject,
-  starWarsProject
+  starWarsProject,
+  minesweeper
 } from "../assets";
 
 export const navLinks = [
@@ -50,6 +51,10 @@ export const navLinks = [
   {
     id: "experience",
     title: "Experience",
+  },
+  {
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -262,6 +267,30 @@ const projects = [
     web_url: "https://star-wars3d.vercel.app/",
     backend_url: "",
   },
+  // Minesweeper
+  {
+    name: "Minesweeper React Project",
+    description:
+      "Explore the classic Minesweeper game, reimagined with a React twist. This project offers three levels of difficulty(easy, medium, and hard) providing a challenging experience for players of all skill levels. The game features an intuitive interface with responsive design, adapting seamlessly to various screen sizes. Uncover the mines strategically and aim to clear the board without triggering any explosive surprises. Whether you're a Minesweeper enthusiast or new to the game, this React-based project promises an engaging and enjoyable experience across different difficulty settings.",
+    tags: [
+      {
+        name: "TailwindCss",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: minesweeper,
+    source_code_link: "https://github.com/JjuliSanz/Minesweeper",
+    web_url: "https://minesweeper-react-project.netlify.app/",
+    backend_url: "",
+  },
   // Web3 Portfolio
   {
     name: "Web3 Portfolio",
@@ -289,34 +318,6 @@ const projects = [
     source_code_link: "https://github.com/JjuliSanz/Web3Portfolio",
     web_url: "https://my-web3-portfolio.vercel.app/",
     backend_url: "",
-  },
-  // Booking App
-  {
-    name: "Full-Stack Booking Clone App",
-    description:
-      "In this project, we create a clone of the popular booking platform. The clone project utilizes modern technologies and frameworks to ensure a seamless user experience, efficient search functionality, and robust backend infrastructure to handle a large volume of data and user interactions. The project focuses on delivering a visually appealing and intuitive interface, along with reliable and accurate information for travelers to plan and book their trips with ease.",
-    tags: [
-      {
-        name: "React-app",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "MongoDB",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Express",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Node.js",
-        color: "yellow-text-gradient",
-      },
-    ],
-    image: bookingapp,
-    source_code_link: "https://github.com/JjuliSanz/Client-Booking-app",
-    web_url: "https://buking-clone.netlify.app/",
-    backend_url: "https://backend-booking-app.onrender.com/api/hotels",
   },
   // Threads App
   {
@@ -353,6 +354,34 @@ const projects = [
     source_code_link: "https://github.com/JjuliSanz/Threads-app",
     web_url: "https://threads-project-app.vercel.app/",
     backend_url: "",
+  },
+  // Booking App
+  {
+    name: "Full-Stack Booking Clone App",
+    description:
+      "In this project, we create a clone of the popular booking platform. The clone project utilizes modern technologies and frameworks to ensure a seamless user experience, efficient search functionality, and robust backend infrastructure to handle a large volume of data and user interactions. The project focuses on delivering a visually appealing and intuitive interface, along with reliable and accurate information for travelers to plan and book their trips with ease.",
+    tags: [
+      {
+        name: "React-app",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: bookingapp,
+    source_code_link: "https://github.com/JjuliSanz/Client-Booking-app",
+    web_url: "https://buking-clone.netlify.app/",
+    backend_url: "https://backend-booking-app.onrender.com/api/hotels",
   },
   // Angular Portfolio
   {
