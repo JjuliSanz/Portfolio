@@ -55,6 +55,7 @@ import valorantSelection from "./projects/valorantSelection.png";
 import threadsProject from "./projects/projectThr.png";
 import starWarsProject from "./projects/starWars.png";
 import minesweeper from "./projects/minesweeper.png";
+import watchesEcommerce from "./projects/watchesEcommerce.png"
 
 export {
   logo,
@@ -106,5 +107,6 @@ export {
   valorantSelection,
   threadsProject,
   starWarsProject,
-  minesweeper
+  minesweeper,
+  watchesEcommerce
 };

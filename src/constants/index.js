@@ -40,7 +40,8 @@ import {
   valorantSelection,
   threadsProject,
   starWarsProject,
-  minesweeper
+  minesweeper,
+  watchesEcommerce
 } from "../assets";
 
 export const navLinks = [
@@ -215,6 +216,35 @@ const experiences = [
 ];
 
 const projects = [
+  // Watch Ecommerce
+  {
+    name: "Luxury Watches Ecommerce",
+    description:
+      "Explore an exquisite collection of Rolex watches at our next-generation e-commerce platform built with Next.js 13, powered by JavaScript. The sleek and responsive design, crafted with Tailwind CSS, provides an immersive shopping experience. Our product lineup, sourced from a JSON dataset, features a variety of Rolex timepieces, each meticulously detailed. Leveraging the efficiency of JSON Server, the products seamlessly integrate into our site. The dynamic functionalities and user-friendly interface are enhanced by the latest features of Next.js 13. Discover the luxury of Rolex watches, effortlessly navigating through the collection using RapidAPI. Our platform combines cutting-edge technology, elegant design, and a curated selection to redefine your online shopping experience. Indulge in the world of Rolex at the touch of your fingertips.",
+    tags: [
+      {
+        name: "NextJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TailwindCss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Json-Server",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: watchesEcommerce,
+    source_code_link: "https://github.com/JjuliSanz/Watch-Ecommerce",
+    web_url: "https://watch-ecommerce-main.vercel.app/",
+    figma_url: "https://www.figma.com/file/mB7yRzQibxPnyQnWfjgsqM/Watches-Ecommerce",
+    backend_url: "",
+  },
   // Valorant Selection
   {
     name: "Valorant Agent Selection Page",
@@ -237,6 +267,32 @@ const projects = [
     image: valorantSelection,
     source_code_link: "https://github.com/JjuliSanz/AgentSelector",
     web_url: "https://agent-selector.vercel.app/",
+    figma_url: "https://www.figma.com/file/OCt7G2CdaMmwPQQXYFdsox/Valorant",
+    backend_url: "",
+  },
+  // Minesweeper
+  {
+    name: "Minesweeper React Project",
+    description:
+      "Explore the classic Minesweeper game, reimagined with a React twist. This project offers three levels of difficulty(easy, medium, and hard) providing a challenging experience for players of all skill levels. The game features an intuitive interface with responsive design, adapting seamlessly to various screen sizes. Uncover the mines strategically and aim to clear the board without triggering any explosive surprises. Whether you're a Minesweeper enthusiast or new to the game, this React-based project promises an engaging and enjoyable experience across different difficulty settings.",
+    tags: [
+      {
+        name: "TailwindCss",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: minesweeper,
+    source_code_link: "https://github.com/JjuliSanz/Minesweeper",
+    web_url: "https://minesweeper-react-project.netlify.app/",
+    figma_url: "https://www.figma.com/file/lLQKs6llP51NfNixTJdNSw/Buscamina",
     backend_url: "",
   },
   // 3D Star Wars Movie Timeline
@@ -265,30 +321,7 @@ const projects = [
     image: starWarsProject,
     source_code_link: "https://github.com/JjuliSanz/StarWars3d/tree/main",
     web_url: "https://star-wars3d.vercel.app/",
-    backend_url: "",
-  },
-  // Minesweeper
-  {
-    name: "Minesweeper React Project",
-    description:
-      "Explore the classic Minesweeper game, reimagined with a React twist. This project offers three levels of difficulty(easy, medium, and hard) providing a challenging experience for players of all skill levels. The game features an intuitive interface with responsive design, adapting seamlessly to various screen sizes. Uncover the mines strategically and aim to clear the board without triggering any explosive surprises. Whether you're a Minesweeper enthusiast or new to the game, this React-based project promises an engaging and enjoyable experience across different difficulty settings.",
-    tags: [
-      {
-        name: "TailwindCss",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "React",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Javascript",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: minesweeper,
-    source_code_link: "https://github.com/JjuliSanz/Minesweeper",
-    web_url: "https://minesweeper-react-project.netlify.app/",
+    figma_url: "",
     backend_url: "",
   },
   // Web3 Portfolio
@@ -317,6 +350,7 @@ const projects = [
     image: web3Portfolio,
     source_code_link: "https://github.com/JjuliSanz/Web3Portfolio",
     web_url: "https://my-web3-portfolio.vercel.app/",
+    figma_url: "",
     backend_url: "",
   },
   // Threads App
@@ -353,6 +387,7 @@ const projects = [
     image: threadsProject,
     source_code_link: "https://github.com/JjuliSanz/Threads-app",
     web_url: "https://threads-project-app.vercel.app/",
+    figma_url: "",
     backend_url: "",
   },
   // Booking App
@@ -381,6 +416,7 @@ const projects = [
     image: bookingapp,
     source_code_link: "https://github.com/JjuliSanz/Client-Booking-app",
     web_url: "https://buking-clone.netlify.app/",
+    figma_url: "",
     backend_url: "https://backend-booking-app.onrender.com/api/hotels",
   },
   // Angular Portfolio
@@ -409,6 +445,7 @@ const projects = [
     image: argProgramaPortfolio,
     source_code_link: "https://github.com/JjuliSanz/FrontEnd-AP",
     web_url: "https://frontend-argprogram.web.app/",
+    figma_url: "",
     backend_url: "https://backend-ap-yky6.onrender.com",
   },
   // Web Development Portfolio
@@ -441,6 +478,7 @@ const projects = [
     image: portfolio,
     source_code_link: "https://github.com/JjuliSanz/Portfolio",
     web_url: "https://my-portfoli-website.netlify.app/",
+    figma_url: "",
     backend_url: "",
   },
 ];

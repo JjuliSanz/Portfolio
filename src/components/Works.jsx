@@ -19,6 +19,7 @@ const ProjectCard = ({
   image,
   source_code_link,
   web_url,
+  figma_url,
   backend_url,
 }) => {
   const [openPreview, setOpenPreview] = useState(false);
@@ -181,7 +182,7 @@ const ProjectCard = ({
                 className="w-1/2 h-1/2 object-contain"
               />
             </div>
-          </div>
+          </div>         
         </div>
         {/* Description */}
         <p className="mt-2 text-secondary text-[14px]">
@@ -242,6 +243,18 @@ const ProjectCard = ({
         >
           {web_url}
         </a>
+        {figma_url && (
+          <div>
+            Figma Url:
+            <a
+              href={figma_url}
+              target="_blank"
+              className="mt-2 ml-2 text-secondary text-[14px]"
+            >
+              {figma_url}
+            </a>
+          </div>
+        )}
         {backend_url && (
           <div>
             Backend Url:
