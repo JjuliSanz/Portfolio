@@ -1,16 +1,83 @@
 import { motion } from "framer-motion";
 
 import { Canvas } from "@react-three/fiber";
-import { Suspense } from "react";
+import { Suspense, useEffect, useState } from "react";
 import Loader from "./Loader";
 import { OrbitControls } from "@react-three/drei";
 import { Bloom, EffectComposer } from "@react-three/postprocessing";
 import { Holo } from "./canvas/Holo";
 
 const Hero = () => {
+  const [isMobile, setIsMobile] = useState('');
+
+  useEffect(() => {
+    // Add listeners for changes to the screen size at three breakpoints
+    const mediaQuery1024 = window.matchMedia("(max-width: 1024px)");
+    const mediaQuery1280 = window.matchMedia("(max-width: 1280px)");
+    const mediaQuery1536 = window.matchMedia("(max-width: 1536px)");
+  
+    // Set the initial value of the `isMobile` state variable
+    setIsMobile(
+      mediaQuery1024.matches
+        ? "max1024"
+        : mediaQuery1280.matches
+        ? "max1280"
+        : "max1536"
+    );
+  
+    // Define a callback function to handle changes to the media query at 1024
+    const handleMediaQueryChange1024 = (event) => {
+      setIsMobile(
+        event.matches
+          ? "max1024"
+          : mediaQuery1280.matches
+          ? "max1280"
+          : "max1536"
+      );
+    };
+  
+    // Add the callback function as a listener for changes to the media query at 1024
+    mediaQuery1024.addEventListener("change", handleMediaQueryChange1024);
+  
+    // Define a callback function to handle changes to the media query at 1280
+    const handleMediaQueryChange1280 = (event) => {
+      setIsMobile(
+        event.matches
+          ? "max1280"
+          : mediaQuery1024.matches
+          ? "max1024"
+          : "max1536"
+      );
+    };
+  
+    // Add the callback function as a listener for changes to the media query at 1280
+    mediaQuery1280.addEventListener("change", handleMediaQueryChange1280);
+  
+    // Define a callback function to handle changes to the media query at 1536
+    const handleMediaQueryChange1536 = (event) => {
+      setIsMobile(
+        event.matches
+          ? "max1536"
+          : mediaQuery1024.matches
+          ? "max1024"
+          : "max1280"
+      );
+    };
+  
+    // Add the callback function as a listener for changes to the media query at 1536
+    mediaQuery1536.addEventListener("change", handleMediaQueryChange1536);
+  
+    // Remove the listeners when the component is unmounted
+    return () => {
+      mediaQuery1024.removeEventListener("change", handleMediaQueryChange1024);
+      mediaQuery1280.removeEventListener("change", handleMediaQueryChange1280);
+      mediaQuery1536.removeEventListener("change", handleMediaQueryChange1536);
+    };
+  }, []);
+
   return (
-    <section className="relative w-full h-screen mx-auto flex">
-      <div className={`pt-36 max-w-7xl mx-auto flex flex-row gap-5`}>
+    <section className="relative w-full h-screen mx-auto flex flex-col xl:flex-row">
+      <div className={`pt-36 w-full xl:w-1/2 mx-auto pl-6 flex flex-row gap-5 justify-center xl:justify-start`}>
         {/* vertical line start */}
         <div className="flex flex-col  items-center ">
           <div className="w-5 h-5 rounded-full bg-[#915eff]" /> {/* Circle */}
@@ -18,6 +85,7 @@ const Hero = () => {
           {/* Vertical Line */}
         </div>
 
+      {/* Hero Text */}
         <div>
           <h1
             className={`font-black text-white lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2`}
@@ -32,12 +100,13 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <div className="w-1/2">
+      {/* Model 3d */}
+      <div className="w-full xl:w-1/2 h-[300px] xl:h-[600px] absolute top-[400px] xl:static cursor-grab">
         <Canvas camera={{ position: [0, 0, 5] }}>
           <Suspense fallback={<Loader />}>
             <ambientLight intensity={1} />
-            <OrbitControls />
-            <Holo scale={1.4} />
+            <OrbitControls enableZoom={false}/>
+            <Holo scale={isMobile === 'max1024'? 2.2 : isMobile === 'max1280' ? 2.5 : 1.6} />
             <EffectComposer>
               <Bloom
                 intensity={1}

@@ -173,7 +173,7 @@ const ProjectCard = ({
           <div className="flex justify-end m-3 card-img_hover ">
             <div
               onClick={(e) => handleOpenGitHub(e)}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              className="bg-gradient-to-r from-[#803788] to-[#09001c] w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
                 src={github}

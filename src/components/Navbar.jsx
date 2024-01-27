@@ -32,7 +32,7 @@ const Navbar = () => {
   return (
     <nav
       className={`sm:px-16 px-6 w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-transparent"
+        scrolled ? "bg-[#4a1e68ec]" : "bg-transparent"
       } `}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
@@ -78,7 +78,7 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            } p-6 bg-gradient-to-r from-[#803788] to-[#09001c] absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className="list-none flex justify-end items-start flex-col gap-4">
               {navLinks.map((Link) => (
@@ -86,7 +86,7 @@ const Navbar = () => {
                   key={Link.id}
                   className={`${
                     active === Link.title ? "text-white" : "text-secondary"
-                  } font-poppins font-medium cursor-pointer text-[16px]`}
+                  } font-poppins font-medium cursor-pointer text-[16px] hover:text-white`}
                   onClick={() => {
                     setToggle(!toggle); // Close the mobile menu on link click
                     setActive(Link.title); // Set active link on click
