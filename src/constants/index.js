@@ -1,57 +1,63 @@
-import {
-  mobile,
-  backend,
-  creator,
-  web,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  angular,
-  school,
-  argprograma,
-  argProgramaPortfolio,
-  NftMarket,
-  domainapp,
-  ecommerceapp,
-  pinatarealestate,
-  bookingapp,
-  solidity,
-  ipfs,
-  ethersjs,
-  metamask,
-  ethereum,
-  hardhat,
-  krypt,
-  crowdfunding,
-  nftcardgame,
-  portfolio,
-  web3Portfolio,
-  valorantSelection,
-  threadsProject,
-  starWarsProject,
-  minesweeper,
-  watchesEcommerce,
-  techweb,
-  figma,
-  nextjs,
-  vitejs,
-  framermotion,
-  mysql,
-  vercel,
-  github,
-  githubdark
-} from "../assets";
+
+// SERVICES
+import web from "../assets/web.png";
+import backend from "../assets/backend.png";
+import creator from "../assets/creator.png";
+
+// TECHNOLOGIES
+import html from "../assets/tech/html.png";
+import css from "../assets/tech/css.png";
+import javascript from "../assets/tech/javascript.png";
+import typescript from "../assets/tech/typescript.png";
+import reactjs from "../assets/tech/reactjs.png";
+import tailwind from "../assets/tech/tailwind.png";
+import solidity from "../assets/tech/solidity.png";
+import ipfs from "../assets/tech/ipfs.png";
+import ethersjs from "../assets/tech/ethersjs.png";
+import metamask from "../assets/tech/metamask.png";
+import nodejs from "../assets/tech/nodejs.png";
+import mongodb from "../assets/tech/mongodb.png";
+import ethereum from "../assets/tech/ethereum.png";
+import hardhat from "../assets/tech/hardhat.png";
+import git from "../assets/tech/git.png";
+import angular from "../assets/tech/angular.png";
+import docker from "../assets/tech/docker.png";
+import figma from "../assets/tech/figma.png";
+import nextjs from "../assets/tech/nextjs.png";
+import vitejs from "../assets/tech/vitejs.svg";
+import framermotion from "../assets/tech/framer-motion.svg";
+import mysql from "../assets/tech/mysql.png";
+import vercel from "../assets/tech/vercel.svg";
+import githubdark from "../assets/tech/githubdark.png"
+
+// EXPERIENCES
+import argprograma from "../assets/company/argprograma.png";
+import school from "../assets/company/school.png";
+
+// PROJECTS
+import argProgramaPortfolio from "../assets/projects/angularPortfolioImg.png";
+import NftMarket from "../assets/projects/NftMarket.png";
+import pinatarealestate from "../assets/projects/pinatarealestate.png";
+import bookingapp from "../assets/projects/bookingapp.png";
+import ecommerceapp from "../assets/projects/ecommerceapp.png";
+import domainapp from "../assets/projects/domainapp.png";
+import krypt from "../assets/projects/kryptexchange.png";
+import crowdfunding from "../assets/projects/crowdfunding.png";
+import nftcardgame from "../assets/projects/NFTCardgame.png";
+import portfolio from "../assets/projects/portfolio.png";
+import web3Portfolio from "../assets/projects/web3Portfolio.png";
+import valorantSelection from "../assets/projects/valorantSelection.png";
+import threadsProject from "../assets/projects/projectThr.png";
+import starWarsProject from "../assets/projects/starWars.png";
+import minesweeper from "../assets/projects/minesweeper.png";
+import watchesEcommerce from "../assets/projects/watchesEcommerce.png";
+import techweb from "../assets/projects/techweb.png"
+
+
+
+
+
+
 
 export const navLinks = [
   {

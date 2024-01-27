@@ -3,10 +3,8 @@ import { motion } from "framer-motion";
 import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
-import { url } from "../assets";
 
-import { styles } from "../styles";
-import { github, web } from "../assets";
+import github from "../assets/github.png"
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -162,6 +160,7 @@ const ProjectCard = ({
         <img
           src={image}
           alt={name}
+          loading="lazy"
           className="w-full h-full object-cover object-top rounded-2xl"
         />
       </div>
@@ -179,10 +178,11 @@ const ProjectCard = ({
               <img
                 src={github}
                 alt="github"
+                loading="lazy"
                 className="w-1/2 h-1/2 object-contain"
               />
             </div>
-          </div>         
+          </div>
         </div>
         {/* Description */}
         <p className="mt-2 text-secondary text-[14px]">
@@ -327,6 +327,7 @@ const Preview = ({ image, name, onClose }) => {
                 <img
                   src={image}
                   alt={name}
+                  loading="lazy"
                   className="object-cover object-center rounded-3xl"
                 />
               </div>
@@ -342,7 +343,9 @@ const Works = () => {
   return (
     <>
       <div>
-        <h2 className={styles.sectionHeadText}>Projects</h2>
+        <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
+          Projects
+        </h2>
       </div>
 
       <div className="w-full flex">

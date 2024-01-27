@@ -1,11 +1,8 @@
 import { motion } from "framer-motion";
 
-import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import Loader from "./Loader";
-import { Hologram } from "./canvas/Hologram";
 import { OrbitControls } from "@react-three/drei";
 import { Bloom, EffectComposer } from "@react-three/postprocessing";
 import { Holo } from "./canvas/Holo";
@@ -13,9 +10,7 @@ import { Holo } from "./canvas/Holo";
 const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto flex">
-      <div
-        className={`pt-36 max-w-7xl mx-auto flex flex-row gap-5`}
-      >
+      <div className={`pt-36 max-w-7xl mx-auto flex flex-row gap-5`}>
         {/* vertical line start */}
         <div className="flex flex-col  items-center ">
           <div className="w-5 h-5 rounded-full bg-[#915eff]" /> {/* Circle */}
@@ -24,34 +19,38 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
+          <h1
+            className={`font-black text-white lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2`}
+          >
             Hi, I'm <span className="text-[#915eff]">Julian</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <p
+            className={`font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-2 text-white-100`}
+          >
             I develop front, back and full-stack{" "}
             <br className="sm:block hidden" /> web applications.
           </p>
         </div>
       </div>
-    <div className="w-1/2">
-      <Canvas camera={{ position:[0, 0, 5], }}>
-        <Suspense fallback={<Loader />}>
-          <ambientLight intensity={1}/>
-          <OrbitControls/>
-          <Holo scale={1.4} />
-          <EffectComposer>
-            <Bloom
-              intensity={1}
-              luminanceThreshold={0.1}
-              luminanceSmoothing={0.5}
-            />
-          </EffectComposer>
-        </Suspense>
-      </Canvas>
+      <div className="w-1/2">
+        <Canvas camera={{ position: [0, 0, 5] }}>
+          <Suspense fallback={<Loader />}>
+            <ambientLight intensity={1} />
+            <OrbitControls />
+            <Holo scale={1.4} />
+            <EffectComposer>
+              <Bloom
+                intensity={1}
+                luminanceThreshold={0.1}
+                luminanceSmoothing={0.5}
+              />
+            </EffectComposer>
+          </Suspense>
+        </Canvas>
       </div>
       {/* Scroll icon */}
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
-        <a href="#about">
+        <a href="#about" aria-label="Go to about section">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
               animate={{ y: [0, 24, 0] }} // Animate the vertical movement of the icon
