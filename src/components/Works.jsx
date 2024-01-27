@@ -152,7 +152,7 @@ const ProjectCard = ({
         scale: 1,
         speed: 450,
       }}
-      className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+      className="bg-tertiary p-5 bg-projects-pattern bg-cover bg-no-repeat bg-center rounded-2xl sm:w-[360px] w-full"
     >
       {/* Image */}
       <div

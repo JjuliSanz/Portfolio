@@ -41,7 +41,16 @@ import {
   threadsProject,
   starWarsProject,
   minesweeper,
-  watchesEcommerce
+  watchesEcommerce,
+  techweb,
+  figma,
+  nextjs,
+  vitejs,
+  framermotion,
+  mysql,
+  vercel,
+  github,
+  githubdark
 } from "../assets";
 
 export const navLinks = [
@@ -146,6 +155,34 @@ const technologies = [
   {
     name: "docker",
     icon: docker,
+  },
+  {
+    name: "Figma",
+    icon: figma,
+  },
+  {
+    name: "Nextjs",
+    icon: nextjs,
+  },
+  {
+    name: "Vitejs",
+    icon: vitejs,
+  },
+  {
+    name: "Framer-Motion",
+    icon: framermotion,
+  },
+  {
+    name: "MySQL",
+    icon: mysql,
+  },
+  {
+    name: "Vercel",
+    icon: vercel,
+  },
+  {
+    name: "Github",
+    icon: githubdark,
   },
 ];
 
@@ -293,6 +330,35 @@ const projects = [
     source_code_link: "https://github.com/JjuliSanz/Minesweeper",
     web_url: "https://minesweeper-react-project.netlify.app/",
     figma_url: "https://www.figma.com/file/lLQKs6llP51NfNixTJdNSw/Buscamina",
+    backend_url: "",
+  },
+  // Web Design
+  {
+    name: "TechWeb Innovations",
+    description:
+      "This is a cutting-edge project meticulously crafted to elevate my expertise in web design and frontend development. Leveraging ViteJS, this initiative served as a comprehensive practice ground, focusing on refining my skills while embracing the implementation of 3D models through React Three Fiber. This hands-on endeavor embodies my commitment to staying ahead of the curve in web development trends. By seamlessly integrating 3D models, I'm not only enhanced the visual allure of the website but also demonstrated my proficiency in harnessing advanced technologies.",
+    tags: [
+      {
+        name: "TailwindCss",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ViteJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "React Three Fiber",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: techweb,
+    source_code_link: "https://github.com/JjuliSanz/TechWeb-Innovations",
+    web_url: "https://techweb-innovations.vercel.app/",
+    figma_url: "",
     backend_url: "",
   },
   // 3D Star Wars Movie Timeline

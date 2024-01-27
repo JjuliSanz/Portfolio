@@ -30,6 +30,12 @@ import hardhat from "./tech/hardhat.png";
 import ethereum from "./tech/ethereum.png";
 import ethersjs from "./tech/ethersjs.png";
 import ipfs from "./tech/ipfs.png";
+import nextjs from "./tech/nextjs.png";
+import vercel from "./tech/vercel.svg";
+import vitejs from "./tech/vitejs.svg";
+import mysql from "./tech/mysql.png";
+import framermotion from "./tech/framer-motion.svg";
+import githubdark from "./tech/githubdark.png"
 
 // Experience
 import meta from "./company/meta.png";
@@ -55,9 +61,11 @@ import valorantSelection from "./projects/valorantSelection.png";
 import threadsProject from "./projects/projectThr.png";
 import starWarsProject from "./projects/starWars.png";
 import minesweeper from "./projects/minesweeper.png";
-import watchesEcommerce from "./projects/watchesEcommerce.png"
+import watchesEcommerce from "./projects/watchesEcommerce.png";
+import techweb from "./projects/techweb.png"
 
 export {
+  // technologies
   logo,
   backend,
   creator,
@@ -79,19 +87,11 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  angular,
-  school,
-  argprograma,
-  argProgramaPortfolio,
-  NftMarket,
-  domainapp,
-  ecommerceapp,
-  pinatarealestate,
-  bookingapp,
+  nextjs,
+  vitejs,
+  framermotion,
+  vercel,
+  mysql,
   solidity,
   metamask,
   hardhat,
@@ -99,6 +99,22 @@ export {
   ethersjs,
   ipfs,
   url,
+  githubdark,
+  // experience
+  meta,
+  shopify,
+  starbucks,
+  tesla,
+  angular,
+  school,
+  // projects
+  argprograma,
+  argProgramaPortfolio,
+  NftMarket,
+  domainapp,
+  ecommerceapp,
+  pinatarealestate,
+  bookingapp,
   krypt,
   crowdfunding,
   nftcardgame,
@@ -108,5 +124,6 @@ export {
   threadsProject,
   starWarsProject,
   minesweeper,
-  watchesEcommerce
+  watchesEcommerce,
+  techweb
 };
