@@ -28,7 +28,8 @@ import vitejs from "../assets/tech/vitejs.svg";
 import framermotion from "../assets/tech/framer-motion.svg";
 import mysql from "../assets/tech/mysql.png";
 import vercel from "../assets/tech/vercel.svg";
-import githubdark from "../assets/tech/githubdark.png"
+import githubdark from "../assets/tech/githubdark.png";
+import database from "../assets/tech/database.png"
 
 // EXPERIENCES
 import argprograma from "../assets/company/argprograma.png";
@@ -52,11 +53,6 @@ import starWarsProject from "../assets/projects/starWars.png";
 import minesweeper from "../assets/projects/minesweeper.png";
 import watchesEcommerce from "../assets/projects/watchesEcommerce.png";
 import techweb from "../assets/projects/techweb.png"
-
-
-
-
-
 
 
 export const navLinks = [
@@ -194,6 +190,38 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Database Design with MySQL",
+    company_name: "Mastermind",
+    icon: database,
+    iconBg: "#383E56",
+    date: "January 2024 - February 2024",
+    points: [
+      "Learning the fundamental concepts of relational databases.",
+      "Using essential tools for logical and conceptual design in a relational database.",
+      "Understanding and utilizing MySQL as an example of a relational database.",
+      "Solving real-world information storage problems using relational databases.",
+      "Transforming conceptual designs of relational databases into a MySQL database.",
+      "Designing SQL queries to work with MySQL databases using Sequelize and Knex.",
+    ],
+  },
+  {
+    title: "Front-End with React and Next.js",
+    company_name: "Mastermind",
+    icon: nextjs,
+    iconBg: "#383E56",
+    date: "September 2023 - December 2023",
+    points: [
+      "Learning the fundamentals of React.js and Next.js.",
+      "Step-by-step development of FrontEnd projects.",
+      "Building and understanding communication between components.",
+      "Applying JavaScript in the specific development of Hooks and events.",
+      "Physical and logical design of applications with Next.js.",
+      "Utilizing React Context to share data within an application.",
+      "Implementing client-side rendering (CSR) and server-side rendering (SSR) with Next.js.",
+      "Fetching data from external APIs using React's 'fetch' and 'axios' library.",
+    ],
+  },
+  {
     title: "#YoProgramo",
     company_name: "Argentina Programa",
     icon: argprograma,
@@ -212,7 +240,7 @@ const experiences = [
     title: "React.js Course",
     company_name: "CoderHouse",
     icon: reactjs,
-    iconBg: "#E6DEDD",
+    iconBg: "#383E56",
     date: "August 2022 - September 2022",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
@@ -236,7 +264,7 @@ const experiences = [
     title: "HTML & CSS Course",
     company_name: "CoderHouse",
     icon: html,
-    iconBg: "#E6DEDD",
+    iconBg: "#383E56",
     date: "April 2022 - May 2022",
     points: [
       "Skills to create well-designed and responsive web pages.",
@@ -248,7 +276,7 @@ const experiences = [
     title: "High School Grade",
     company_name: "E.E.S. N°17",
     icon: school,
-    iconBg: "#E6DEDD",
+    iconBg: "#383E56",
     date: "March 2015 - November 2021",
     points: [
       "Skills to create well-designed and responsive web pages.",

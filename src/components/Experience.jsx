@@ -15,6 +15,7 @@ const ExperienceCard = ({ experience }) => {
       contentStyle={{
         background: "#1d1836",
         color: "#fff",
+        boxShadow: "0px 0px 30px 10px rgb(79, 75, 104)",
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       date={experience.date}
@@ -55,9 +56,18 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
+  const variants = {
+    hidden: { opacity: 0, y: -50 },
+    visible: { opacity: 1, y: 0 },
+  };
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={variants}
+        transition={{ duration: 0.5 }}      
+      >
         <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
           What I have done so far
         </p>
