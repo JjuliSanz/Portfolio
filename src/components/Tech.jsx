@@ -1,17 +1,27 @@
-import { BallCanvas } from "./canvas"
-import { SectionWrapper } from "../hoc"
-import { technologies } from "../constants"
+import { SectionWrapper } from "../hoc";
+import { technologies } from "../constants";
 
 const Tech = () => {
   return (
-    <div className="flex flex-wrap flex-row justify-center gap-10">
-      {technologies.map((technology) => (
-        <div className="w-28 h-28" key={technology.name}>
-          <BallCanvas icon={technology.icon}/>
-        </div>
-      ))}
-    </div>
-  )
-}
+    <>
+      <div className="flex flex-wrap flex-row justify-center gap-10 relative">
+        {technologies.map((technology) => (
+          <div
+            className="w-28 h-28 skillContainer p-1 flex justify-center items-center"
+            key={technology.name}
+          >
+            <div className="rounded-[20%] skillImageContainer h-[100%] p-3 flex justify-center items-center relative">
+              <img
+                src={technology.icon}
+                className="object-cover object-center"
+              />
+            </div>
+          </div>
+        ))}
+      </div>
+      
+    </>
+  );
+};
 
 export default SectionWrapper(Tech, "");

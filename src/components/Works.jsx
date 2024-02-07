@@ -359,7 +359,7 @@ const Works = () => {
       </div>
 
       <div className="mt-20 flex flex-wrap gap-7">
-        {projects.slice(0, 8).map((project, index) => (
+        {projects.slice(0, 10).map((project, index) => (
           <ProjectCard key={project.name} {...project} index={index} />
         ))}
       </div>

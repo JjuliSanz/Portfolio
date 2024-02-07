@@ -5,6 +5,7 @@ import emailjs from "@emailjs/browser";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { Holo } from "./canvas/Holo";
 
 // hI4UPK2oZSMPy1xWH
 // service_71p8ggb
@@ -136,7 +137,7 @@ const Contact = () => {
         variants={slideIn("right", "tween", 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] cursor-grab"
       >
-        <EarthCanvas />
+        <EarthCanvas />  
       </motion.div>
     </div>
   );

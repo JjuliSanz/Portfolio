@@ -115,20 +115,8 @@ const technologies = [
     icon: tailwind,
   },
   {
-    name: "Solidity",
-    icon: solidity,
-  },
-  {
     name: "Ipfs",
     icon: ipfs,
-  },
-  {
-    name: "Ethers.js",
-    icon: ethersjs,
-  },
-  {
-    name: "MetaMask",
-    icon: metamask,
   },
   {
     name: "Node JS",
@@ -137,14 +125,6 @@ const technologies = [
   {
     name: "MongoDB",
     icon: mongodb,
-  },
-  {
-    name: "Ethereum",
-    icon: ethereum,
-  },
-  {
-    name: "HardHat",
-    icon: hardhat,
   },
   {
     name: "git",

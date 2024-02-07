@@ -6,6 +6,7 @@ import Loader from "./Loader";
 import { OrbitControls } from "@react-three/drei";
 import { Bloom, EffectComposer } from "@react-three/postprocessing";
 import { Holo } from "./canvas/Holo";
+import { EarthCanvas } from "./canvas";
 
 const Hero = () => {
   const [isMobile, setIsMobile] = useState('');
@@ -113,9 +114,9 @@ const Hero = () => {
                 luminanceThreshold={0.1}
                 luminanceSmoothing={0.5}
               />
-            </EffectComposer>
+            </EffectComposer>           
           </Suspense>
-        </Canvas>
+        </Canvas>     
       </div>
       {/* Scroll icon */}
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
