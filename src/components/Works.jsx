@@ -25,7 +25,6 @@ const ProjectCard = ({
 
   const handleOpenPreview = () => {
     setOpenPreview(true);
-    console.log(image);
   };
   const handleOpenURL = (url) => {
     web_url.forEach((url) => window.open(url, "_blank"));
@@ -38,112 +37,6 @@ const ProjectCard = ({
     setFullDesc(!fullDesc);
   };
   return (
-    // <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-    //   <Tilt
-    //     options={{
-    //       max: 45,
-    //       scale: 1,
-    //       speed: 450,
-    //     }}
-    //     className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
-    //   >
-    //     <div
-    //       className="relative w-full h-[230px] cursor-pointer"
-    //       onClick={handleOpenPreview}
-    //     >
-    //       {/* Image */}
-    //       <img
-    //         src={image}
-    //         alt={name}
-    //         className="w-full h-full object-cover object-top rounded-2xl "
-    //       />
-
-    //       {/* Url icon */}
-    //       {/* {web_url.map((url, index) => (
-    //         <div
-    //           key={index}
-    //           className="absolute inset-0 flex justify-start m-3 card-img_hover inline-block"
-    //         >
-    //           <div
-    //             onClick={() => handleOpenURL(url)}
-    //             className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer inline-block"
-    //           >
-    //             <img
-    //               src={url}
-    //               alt="weburl"
-    //               className="w-1/2 h-1/2 object-contain"
-    //             />
-    //           </div>
-    //         </div>
-    //       ))} */}
-    //     </div>
-
-    //     <div className="mt-5">
-    //       <div className="flex justify-between">
-    //         {/* Title */}
-    //         <h3 className="text-white font-bold text-[24px]">{name}</h3>
-    //         {/* Github icon */}
-    //         <div className="flex justify-end m-3 card-img_hover ">
-    //           <div
-    //             onClick={(e) => handleOpenGitHub(e)}
-    //             className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-    //           >
-    //             <img
-    //               src={github}
-    //               alt="github"
-    //               className="w-1/2 h-1/2 object-contain"
-    //             />
-    //           </div>
-    //         </div>
-    //       </div>
-    //       {/* Description */}
-    //       <p className="mt-2 text-secondary text-[14px]">{description}</p>
-    //     </div>
-
-    //     {/* Work Tags */}
-    //     <div className="mt-4 flex flex-wrap gap-2">
-    //       {tags.map((tag) => (
-    //         <p key={tag.name} className={`text-[14px] ${tag.color}`}>
-    //           #{tag.name}
-    //         </p>
-    //       ))}
-    //     </div>
-
-    //     {/* Live Demo */}
-    //     <div className="mt-5 mr-1">
-    //       {" "}
-    //       Live Demo:
-    //       <a
-    //         href={web_url}
-    //         target="_blank"
-    //         className="mt-2 ml-2 text-secondary text-[14px]"
-    //       >
-    //         {web_url}
-    //       </a>
-    //       {backend_url && (
-    //         <div>
-    //           Backend Url:
-    //           <a
-    //             href=""
-    //             target="_blank"
-    //             className="mt-2 ml-2 text-secondary text-[14px]"
-    //           >
-    //             {backend_url}
-    //           </a>
-    //         </div>
-    //       )}
-    //     </div>
-
-    //     {/* Preview */}
-    //     {openPreview && (
-    //       <Preview
-    //         image={image}
-    //         name={name}
-    //         onClose={() => setOpenPreview(false)}
-    //       />
-    //     )}
-    //   </Tilt>
-    // </motion.div>
     <Tilt
       options={{
         max: 45,
@@ -244,12 +137,12 @@ const ProjectCard = ({
           {web_url}
         </a>
         {figma_url && (
-          <div>
+          <div className="w-full">
             Figma Url:
             <a
               href={figma_url}
               target="_blank"
-              className="mt-2 ml-2 text-secondary text-[14px]"
+              className="mt-2 ml-2 text-secondary text-[14px] line-clamp-1"
             >
               {figma_url}
             </a>
@@ -343,7 +236,7 @@ const Works = () => {
   return (
     <>
       <div>
-        <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
+        <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] ">
           Projects
         </h2>
       </div>

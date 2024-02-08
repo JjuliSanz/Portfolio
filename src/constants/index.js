@@ -29,7 +29,8 @@ import framermotion from "../assets/tech/framer-motion.svg";
 import mysql from "../assets/tech/mysql.png";
 import vercel from "../assets/tech/vercel.svg";
 import githubdark from "../assets/tech/githubdark.png";
-import database from "../assets/tech/database.png"
+import database from "../assets/tech/database.png";
+import github from "../assets/github.png"
 
 // EXPERIENCES
 import argprograma from "../assets/company/argprograma.png";
@@ -164,7 +165,7 @@ const technologies = [
   },
   {
     name: "Github",
-    icon: githubdark,
+    icon: github,
   },
 ];
 
