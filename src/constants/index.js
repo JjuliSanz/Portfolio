@@ -53,7 +53,8 @@ import threadsProject from "../assets/projects/projectThr.png";
 import starWarsProject from "../assets/projects/starWars.png";
 import minesweeper from "../assets/projects/minesweeper.png";
 import watchesEcommerce from "../assets/projects/watchesEcommerce.png";
-import techweb from "../assets/projects/techweb.png"
+import techweb from "../assets/projects/techweb.png";
+import htmlPortfolio from "../assets/projects/htmlPortfolio.png";
 
 
 export const navLinks = [
@@ -373,6 +374,31 @@ const projects = [
     image: techweb,
     source_code_link: "https://github.com/JjuliSanz/TechWeb-Innovations",
     web_url: "https://techweb-innovations.vercel.app/",
+    figma_url: "",
+    backend_url: "",
+  },
+  // Web Design
+  {
+    name: "Html&Css Portfolio",
+    description:
+      "Welcome to my personal digital portfolio! Here, I invite you to explore a bit more about who I am beyond the lines of code. Delve into the pages where I share snippets of my life, from my literary adventures to my sporting pursuits and love for video games. Through these digital snapshots, you'll get to know me a little better as we embark on this journey together. So, take a moment to peruse through, and perhaps you'll find a common thread that resonates with you.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: htmlPortfolio,
+    source_code_link: "https://github.com/JjuliSanz/HtmlCss-Portfolio",
+    web_url: "https://juliansanz-html-css-portfolio.vercel.app/",
     figma_url: "",
     backend_url: "",
   },

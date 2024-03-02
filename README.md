@@ -15,7 +15,7 @@ By following industry best practices and utilizing reusable and scalable code, I
  - [Three.js](https://threejs.org)
  - [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction)
  - [Framer Motion](https://www.framer.com/motion/)
- - [Framer Motion](https://www.framer.com/motion/)
+ - [Vite.JS](https://vitejs.dev/guide/)
 
 
 ## Authors
