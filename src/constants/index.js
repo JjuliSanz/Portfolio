@@ -377,7 +377,7 @@ const projects = [
     figma_url: "",
     backend_url: "",
   },
-  // Web Design
+  // Html Portfolio
   {
     name: "Html&Css Portfolio",
     description:
