@@ -1,4 +1,3 @@
-
 // SERVICES
 import web from "../assets/web.png";
 import backend from "../assets/backend.png";
@@ -30,7 +29,7 @@ import mysql from "../assets/tech/mysql.png";
 import vercel from "../assets/tech/vercel.svg";
 import githubdark from "../assets/tech/githubdark.png";
 import database from "../assets/tech/database.png";
-import github from "../assets/github.png"
+import github from "../assets/github.png";
 
 // EXPERIENCES
 import argprograma from "../assets/company/argprograma.png";
@@ -55,7 +54,10 @@ import minesweeper from "../assets/projects/minesweeper.png";
 import watchesEcommerce from "../assets/projects/watchesEcommerce.png";
 import techweb from "../assets/projects/techweb.png";
 import htmlPortfolio from "../assets/projects/htmlPortfolio.png";
-
+import savoryHero from "../assets/projects/savory-hero.png";
+import mustangDesign from "../assets/projects/mustang-design.png";
+import miraiHero from "../assets/projects/mirai-hero.png";
+import dashboardImage from "../assets/projects/dashboard-image.png";
 
 export const navLinks = [
   {
@@ -269,6 +271,170 @@ const experiences = [
 ];
 
 const projects = [
+  // MIRAI
+  {
+    name: "MIRAI web development agency",
+    description:
+      "This project is built with Next.js 14 and TypeScript, delivering a fast, scalable, and type-safe experience. Styled with Tailwind CSS, the design embraces a unique cyberpunk retro vibe — bold colors, glowing effects, and sharp UI elements come together for a standout visual identity. Animations and transitions are brought to life with Framer Motion, enhancing the immersive feel of the interface, while Swiper JS adds responsive and stylish sliders for browsing content effortlessly.",
+    tags: [
+      {
+        name: "NextJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TailwindCss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Framer-motion",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "SwiperJS",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: miraiHero,
+    source_code_link: "https://github.com/JjuliSanz/Mirai-Web",
+    web_url: "https://www.miraiweblab.com/",
+    figma_url: "",
+    backend_url: "",
+  },
+  // MUSTANG
+  {
+    name: "Mustang Restaurant Website",
+    description:
+      "This project showcases the beauty and offerings of our restaurant through an engaging and interactive web experience. Explore images of our location and delicious food, detailed information about our restaurant, and a comprehensive menu displaying various pizzas and other dishes, each accompanied by images, descriptions, and prices. Built with Next.js 14 and TypeScript. The responsive design, styled with Tailwind CSS, Framer Motion to enhance interactivity with smooth animations, while Swiper JS powers elegant sliders for showcasing the offerings. The shopping cart is managed globally with Zustand, providing a seamless user experience. Secure access is handled via Auth.js, protecting routes with middleware, and data is managed using Prisma with PostgreSQL for reliable and structured database interactions. Zod ensures accurate and validated form submissions throughout the site.",
+    tags: [
+      {
+        name: "NextJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TailwindCss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "PostgreSQL",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Prisma",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Zod",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Auth.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Framer-motion",
+        color: "green-text-gradient",
+      },
+    ],
+    image: mustangDesign,
+    source_code_link: "https://github.com/JjuliSanz/mustang-web",
+    web_url: "https://mustang-restaurant.vercel.app/",
+    figma_url: "",
+    backend_url: "",
+  },
+  // DASHBOARD
+  {
+    name: "Dashboard Restaurant Website",
+    description:
+      "Built with Next.js 14 and TypeScript, this admin panel delivers a robust and scalable foundation, while Tailwind CSS ensures a clean and responsive UI tailored for efficiency. Designed for full content control, the dashboard lets you create, edit, and organize projects, manage categories, all through a streamlined interface. Form handling is powered by Zod, ensuring strong validation and reliable user input. Prisma with PostgreSQL manages structured and secure data storage. Route protection and authentication are seamlessly handled by Auth.js, securing access where it matters. Interactive elements and transitions are enhanced with Framer Motion",
+    tags: [
+      {
+        name: "NextJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TailwindCss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "PostgreSQL",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Prisma",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Zod",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Auth.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Framer-motion",
+        color: "green-text-gradient",
+      },
+    ],
+    image: dashboardImage,
+    source_code_link: "https://github.com/JjuliSanz/mustang-web",
+    web_url: "https://mustang-restaurant.vercel.app/",
+    figma_url: "",
+    backend_url: "",
+  },
+  // SAVORY
+  {
+    name: "Savory Heladeria & Cafeteria Website",
+    description:
+      "This project showcases the beauty and offerings of our heladeria through an engaging and interactive web experience. Explore images of our location and delicious food, detailed information about our heladeria, and a comprehensive menu displaying various desserts and other dishes, each accompanied by images, descriptions, and prices. Built with Next.js 14 and TypeScript. The responsive design, styled with Tailwind CSS, Framer Motion to enhance interactivity with smooth animations, while Swiper JS powers elegant sliders for showcasing the offerings. The shopping cart is managed globally with Zustand, providing a seamless user experience. Secure access is handled via Auth.js, protecting routes with middleware, and data is managed using MongoDB with Mongoose for structured modeling. Zod ensures accurate and validated form submissions throughout the site.",
+    tags: [
+      {
+        name: "NextJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TailwindCss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Zod",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Auth.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Framer-motion",
+        color: "green-text-gradient",
+      },
+    ],
+    image: savoryHero,
+    source_code_link: "https://github.com/JjuliSanz/savory-web",
+    web_url: "https://savory-heladeria.vercel.app/",
+    figma_url: "",
+    backend_url: "",
+  },
   // Watch Ecommerce
   {
     name: "Luxury Watches Ecommerce",
@@ -295,7 +461,8 @@ const projects = [
     image: watchesEcommerce,
     source_code_link: "https://github.com/JjuliSanz/Watch-Ecommerce",
     web_url: "https://watch-ecommerce-main.vercel.app/",
-    figma_url: "https://www.figma.com/file/mB7yRzQibxPnyQnWfjgsqM/Watches-Ecommerce",
+    figma_url:
+      "https://www.figma.com/file/mB7yRzQibxPnyQnWfjgsqM/Watches-Ecommerce",
     backend_url: "",
   },
   // Valorant Selection

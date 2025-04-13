@@ -49,15 +49,12 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
         As a Full Stack Web Developer with a primary focus on front-end
-        development, I bring nearly two years of dedicated practice and
+        development, I bring nearly three years of dedicated practice and
         continuous learning to the realm of web development. My journey has been
         shaped by a combination of structured courses, hands-on projects, and
         the creation of both cloned and original web applications. Throughout my
         learning path, I have honed my skills in crafting engaging and
-        responsive user interfaces. My proficiency extends to leveraging modern
-        front-end technologies, including HTML, CSS, and JavaScript frameworks.
-        I have a keen eye for design principles, ensuring seamless user
-        experiences across various devices.
+        responsive user interfaces.       
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10 justify-center lg:justify-between">

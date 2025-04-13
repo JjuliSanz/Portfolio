@@ -1,10 +1,11 @@
 import { Tilt } from "react-tilt";
-import { motion } from "framer-motion";
 import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
-
-import github from "../assets/github.png"
+import { motion, AnimatePresence } from "framer-motion";
+import { createPortal } from "react-dom";
+import { useEffect } from "react";
+import github from "../assets/github.png";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -26,9 +27,6 @@ const ProjectCard = ({
   const handleOpenPreview = () => {
     setOpenPreview(true);
   };
-  const handleOpenURL = (url) => {
-    web_url.forEach((url) => window.open(url, "_blank"));
-  };
   const handleOpenGitHub = (e) => {
     e.stopPropagation();
     window.open(source_code_link, "_blank");
@@ -47,7 +45,7 @@ const ProjectCard = ({
     >
       {/* Image */}
       <div
-        className="relative w-full h-[230px] cursor-pointer"
+        className="w-full h-[230px] cursor-pointer"
         onClick={handleOpenPreview}
       >
         <img
@@ -162,73 +160,62 @@ const ProjectCard = ({
         )}
       </div>
       {/* Preview */}
-      {openPreview && (
-        <Preview
-          image={image}
-          name={name}
-          onClose={() => setOpenPreview(false)}
-        />
-      )}
+      <AnimatePresence>
+        {openPreview && (
+          <Preview
+            image={image}
+            name={name}
+            onClose={() => setOpenPreview(false)}
+          />
+        )}
+      </AnimatePresence>
     </Tilt>
   );
 };
 
 // Image Preview Pop Up
+
+const modal = {
+  hidden: { opacity: 0, scale: 0.95 },
+  visible: { opacity: 1, scale: 1 },
+  exit: { opacity: 0, scale: 0.95 },
+};
+
 const Preview = ({ image, name, onClose }) => {
-  return (
-    <Transition.Root show={true} as={Fragment}>
-      <Dialog
-        as="div"
-        className="fixed inset-0 overflow-y-auto"
-        onClose={onClose}
+  return createPortal(
+    <motion.div
+      className="fixed inset-0 w-full h-full z-50 flex items-center justify-center bg-black bg-opacity-70 overflow-auto p-10"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+      onClick={onClose}
+    >
+      {/* Modal */}
+      <motion.div
+        className="w-full h-full relative"
+        variants={modal}
+        initial="hidden"
+        animate="visible"
+        exit="exit"       
       >
-        <div className="flex items-center justify-center min-h-screen">
-          <Transition.Child
-            as={Fragment}
-            enter="ease-out duration-300"
-            enterFrom="opacity-0"
-            enterTo="opacity-100"
-            leave="ease-in duration-200"
-            leaveFrom="opacity-100"
-            leaveTo="opacity-0"
-          >
-            <Dialog.Overlay className="fixed inset-0 bg-black opacity-50" />
-          </Transition.Child>
+        <button
+          type="button"
+          className="absolute right-2 text-gray-400 hover:text-gray-500"
+          onClick={onClose}
+        >
+          <XMarkIcon className="h-10 w-10" aria-hidden="true" />
+        </button>
 
-          <Transition.Child
-            as={Fragment}
-            enter="ease-out duration-300"
-            enterFrom="opacity-0 scale-95"
-            enterTo="opacity-100 scale-100"
-            leave="ease-in duration-200"
-            leaveFrom="opacity-100 scale-100"
-            leaveTo="opacity-0 scale-95"
-          >
-            <div className="relative shadow-xl">
-              {/* Close button */}
-              <button
-                type="button"
-                className="absolute right-2 text-gray-400 hover:text-gray-500"
-                onClick={() => onClose()}
-              >
-                {/* <span className="sr-only">Close</span> */}
-                <XMarkIcon className="h-10 w-10" aria-hidden="true" />
-              </button>
-
-              {/* Image */}
-              <div className="bg-tertiary p-5 rounded-3xl sm:w-[1300px] w-full">
-                <img
-                  src={image}
-                  alt={name}
-                  loading="lazy"
-                  className="object-cover object-center rounded-3xl"
-                />
-              </div>
-            </div>
-          </Transition.Child>
-        </div>
-      </Dialog>
-    </Transition.Root>
+        <img
+          src={image}
+          alt={name}
+          loading="lazy"
+          className="object-scale-down object-start rounded-3xl w-full h-full"
+        />
+      </motion.div>
+    </motion.div>,
+    document.body // <-- Esto es lo clave: renderizar directamente en <body>
   );
 };
 
